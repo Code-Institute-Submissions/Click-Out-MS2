@@ -1,0 +1,12 @@
+
+
+.grid-row{
+    text-align: center;
+}
+.grid-column{
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    background-color:  #9c9cafa1;
+
+}
