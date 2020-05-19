@@ -5,10 +5,13 @@
 
 /*--logo/title--*/
 .logo{
-    text-align: center
+    text-align: center;
+    
 }
 .favicon{
     color:#626396e8;
+    padding-left: 10px;
+    vertical-align: text-top;
     
    
 }
