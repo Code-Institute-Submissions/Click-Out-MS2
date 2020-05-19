@@ -12,10 +12,11 @@
     color:#626396e8;
     padding-left: 10px;
     vertical-align: text-top;
-    
    
 }
-
+.container{
+    padding: 30px
+}
 .grid-row{
     text-align: center;
 }
@@ -37,6 +38,9 @@
         width: 60px;
         height: 70px;
     }
+    .container{
+        padding: 35px;
+    }
 }
 
 @media only screen and (max-width: 450px) {
@@ -45,4 +49,11 @@
         height: 60px;
     }
 }
+
+@media only screen and (min-width: 600px) {
+    .container{
+        padding: 50px
+    }
+    }
+
 
