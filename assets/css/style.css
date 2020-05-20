@@ -55,7 +55,10 @@ h1{
 .reset-button{
     /*visibility:hidden;(visibility will be hidden at first only to be shown when player fails or want to start again)*/
 }
-.levels{
+.level-div{
+    text-align: right;
+    font-size: 1.5rem;
+    position: relative;
 
 }
 
@@ -69,8 +72,5 @@ h1{
     /* visibility: hidden; */
     border-style: solid;
     border-color:  #634d777a;
-    top: 20rem;
-    width: 50%;
-    left: 22rem;
 }
 
