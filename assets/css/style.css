@@ -32,7 +32,6 @@ h1{
     background-color:  #9c9cafa1;
 }
 /*--Game responsiveness--*/
-}
 @media only screen and (max-width: 600px) {
     .grid-column{
         width: 80px;
@@ -44,6 +43,7 @@ h1{
         width: 60px;
         height: 70px;
     }
+
 }
 
 
@@ -73,5 +73,6 @@ h1{
     /* visibility: hidden; */
     border-style: solid;
     border-color:  #634d777a;
+    bottom: 17rem;
 }
 
