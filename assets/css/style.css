@@ -59,10 +59,24 @@ h1{
     }
     }
 
-/*--buttons--*/
-.start-button{}
+/*--buttons/level --*/
+.start-button{
+}
 .reset-button{
     /*visibility:hidden;(visibility will be hidden at first only to be shown when player fails or want to start again)*/
 }
+.levels{
+
+}
 
 /*--instruction box--*/
+
+.instruction-container{
+    position: relative;
+    /* visibility: hidden; */
+    border-style: solid;
+    border-color:  #634d777a;
+    top: 20rem;
+    width: 70%;
+    left: 7.5rem;
+}
