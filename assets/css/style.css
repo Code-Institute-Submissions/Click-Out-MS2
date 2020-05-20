@@ -28,7 +28,7 @@ h1{
     width: 100px;
     display: inline-block;
     background-color:  #9c9cafa1;
-
+/*--Game responsiveness--*/
 }
 @media only screen and (max-width: 600px) {
     .grid-column{
@@ -59,4 +59,10 @@ h1{
     }
     }
 
+/*--buttons--*/
+.start-button{}
+.reset-button{
+    /*visibility:hidden;(visibility will be hidden at first only to be shown when player fails or want to start again)*/
+}
 
+/*--instruction box--*/
