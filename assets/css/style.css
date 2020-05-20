@@ -6,6 +6,7 @@
 /*--logo/title--*/
 .logo {
     text-align: center;
+    margin-bottom: 40px;
     
 }
 .favicon{
@@ -17,17 +18,19 @@
 h1{
     font-size: 2.5rem;
 }
-.container{
-    padding: 30px
-}
+
 .grid-row{
     text-align: center;
+}
+.grid-container{
+    margin-top:30px;
 }
 .grid-column{
     height: 100px;
     width: 100px;
     display: inline-block;
     background-color:  #9c9cafa1;
+}
 /*--Game responsiveness--*/
 }
 @media only screen and (max-width: 600px) {
@@ -40,9 +43,6 @@ h1{
 .grid-column{
         width: 60px;
         height: 70px;
-    }
-    .container{
-        padding: 35px;
     }
 }
 
