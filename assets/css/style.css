@@ -34,6 +34,12 @@ h1{
     .grid-column{
         width: 80px;
     }
+    .instruction-container{
+    top: 10rem;
+    width: 50%;
+    left: 7.5rem;
+
+    }
 }
 
 @media only screen and (max-width: 400px) {
@@ -44,6 +50,7 @@ h1{
     .container{
         padding: 35px;
     }
+    
 }
 
 @media only screen and (max-width: 450px) {
@@ -80,6 +87,6 @@ h1{
     border-style: solid;
     border-color:  #634d777a;
     top: 20rem;
-    width: 70%;
-    left: 7.5rem;
+    width: 50%;
+    left: 22rem;
 }
