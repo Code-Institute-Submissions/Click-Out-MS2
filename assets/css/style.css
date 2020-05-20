@@ -4,7 +4,7 @@
 /*--Colours--*/
 
 /*--logo/title--*/
-.logo{
+.logo {
     text-align: center;
     
 }
@@ -13,6 +13,9 @@
     padding-left: 10px;
     vertical-align: text-top;
    
+}
+h1{
+    font-size: 2.5rem;
 }
 .container{
     padding: 30px
