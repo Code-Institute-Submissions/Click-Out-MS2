@@ -56,9 +56,10 @@ h1{
     /*visibility:hidden;(visibility will be hidden at first only to be shown when player fails or want to start again)*/
 }
 .level-div{
-    text-align: right;
+    text-align:center;
     font-size: 1.5rem;
     position: relative;
+    font-weight:bold;
 
 }
 
