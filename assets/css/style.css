@@ -38,7 +38,7 @@ h1{
 /*--buttons/level --*/
 .start-button{
 
-    width: 40%;
+    width: 30%;
     position: relative;
     float: right;
     bottom: 15rem;
@@ -76,12 +76,6 @@ h1{
 }
 
 /*--Game responsiveness--*/
-@media only screen and (max-width: 600px) {
-    .grid-column{
-        
-    }
-}
-
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 .grid-column{
         width: 60px;
@@ -92,11 +86,18 @@ h1{
 }
 }
 
+
+
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 .instruction-container{
     width: 70%;
     left: 7.5rem;
     }
+    .start-button{
+    width: 15%;
+    bottom: 16rem;
+    right: 27rem;
+}
 }
 
 @media only screen  and (min-width : 1224px) {
@@ -104,5 +105,11 @@ h1{
     width: 70%;
     left: 13.5rem;
     }
-
+.start-button{
+    width: 12.5%;
+    bottom: 16rem;
+    right: 36rem;
 }
+}
+
+
