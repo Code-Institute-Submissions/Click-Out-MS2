@@ -11,6 +11,7 @@ body {
     margin-bottom: 40px;
     
 }
+
 .favicon{
     color:#f8f9faed;
     padding-left: 10px;
@@ -33,28 +34,19 @@ h1{
     display: inline-block;
     background-color: #f8f9faed;
 }
-/*--Game responsiveness--*/
-@media only screen and (max-width: 600px) {
-    .grid-column{
-        width: 80px;
-    }
-}
-
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-.grid-column{
-        width: 60px;
-        height: 70px;
-    }
-
-}
-
-
-
 
 /*--buttons/level --*/
 .start-button{
+
+    width: 40%;
+    position: relative;
+    float: right;
+    bottom: 15rem;
+    right: 7rem;
 }
 .reset-button{
+    width: 40%;
+    position: relative;
     /*visibility:hidden;(visibility will be hidden at first only to be shown when player fails or want to start again)*/
 }
 .level-div{
@@ -73,7 +65,7 @@ h1{
 }
 .instruction-container{
     position: relative;
-    /* visibility: hidden; */
+    /* visibility: hidden; then make visible at start of game */
     border-style: solid;
     border-color:  #634d777a;
     bottom: 17rem;
@@ -82,4 +74,21 @@ h1{
     font-weight: 600;
     text-align: center;
 }
+
+/*--Game responsiveness--*/
+@media only screen and (max-width: 600px) {
+    .grid-column{
+        width: 80px;
+    }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+.grid-column{
+        width: 60px;
+        height: 70px;
+    }
+
+}
+
+
 
