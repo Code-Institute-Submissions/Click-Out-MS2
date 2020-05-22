@@ -45,8 +45,11 @@ h1{
     right: 7rem;
 }
 .reset-button{
-    width: 40%;
+    
     position: relative;
+    bottom: 15rem;
+    text-align: center;
+}
     /*visibility:hidden;(visibility will be hidden at first only to be shown when player fails or want to start again)*/
 }
 .level-div{
@@ -93,11 +96,6 @@ h1{
     width: 70%;
     left: 7.5rem;
     }
-    .start-button{
-    width: 15%;
-    bottom: 16rem;
-    right: 27rem;
-}
 }
 
 @media only screen  and (min-width : 1224px) {
@@ -105,11 +103,8 @@ h1{
     width: 70%;
     left: 13.5rem;
     }
-.start-button{
-    width: 12.5%;
-    bottom: 16rem;
-    right: 36rem;
 }
-}
+
+
 
 
