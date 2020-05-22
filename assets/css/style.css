@@ -5,6 +5,12 @@
 body {
     background-color: #808080ba;;
 }
+
+.instruction-container {
+    background-color: #db7093bd;
+}
+
+
 /*--logo/title--*/
 .logo {
     text-align: center;
@@ -61,6 +67,7 @@ h1{
 }
 
 /*--instruction box--*/
+
 .instruction-container p {
     font-size: 2rem;
     font-weight: bold;
