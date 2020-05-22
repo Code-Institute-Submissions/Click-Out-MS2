@@ -12,7 +12,7 @@ body {
 
 
 /*--logo/title--*/
-.logo {
+#game-title {
     text-align: center;
     margin-bottom: 40px;
     
