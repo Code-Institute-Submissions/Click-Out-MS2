@@ -22,7 +22,7 @@ body {
     font-size: 3rem;
 }
 
-.favicon{
+#game-title i {
     color:#f8f9faed;
     padding-left: 10px;
     vertical-align: text-top;
@@ -87,6 +87,10 @@ h1{
 .instruction-container span {
     font-weight: 600;
     text-align: center;
+}
+/*-- css added in js --*/
+.visibility{
+    visibility: hidden;
 }
 
 /*--Game responsiveness--*/
