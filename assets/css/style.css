@@ -71,6 +71,7 @@ h1{
     font-size: 1.5rem;
     position: relative;
     font-weight:bold;
+    visibility: hidden;
 
 
 }
