@@ -15,14 +15,17 @@ body {
 #game-title {
     text-align: center;
     margin-bottom: 40px;
-    visibility: hidden;
+    
+}
+
+.game-title-font{
+    font-size: 3rem;
 }
 
 .favicon{
     color:#f8f9faed;
     padding-left: 10px;
     vertical-align: text-top;
-    visibility: hidden;
    
 }
 h1{
@@ -40,7 +43,6 @@ h1{
     width: 100px;
     display: inline-block;
     background-color: #f8f9faed;
-    visibility: hidden;
 }
 
 /*--buttons/level --*/
@@ -48,10 +50,8 @@ h1{
 
     
     position: relative;
-    float: right;
     bottom: 15rem;
    text-align: center;
-   visibility: hidden;
 }
 .reset-button{
     
@@ -67,7 +67,7 @@ h1{
     font-size: 1.5rem;
     position: relative;
     font-weight:bold;
-    visibility: hidden;
+
 
 }
 
@@ -80,7 +80,6 @@ h1{
 }
 .instruction-container{
     position: relative;
-    visibility: hidden;
     border-style: solid;
     border-color:  #634d777a;
     bottom: 17rem;
