@@ -20,14 +20,13 @@ body {
     
 }
 
-.game-title-font{
-    font-size: 3rem;
-}
 
-#game-title i {
+#logo {
     color:#f8f9faed;
     padding-left: 10px;
     vertical-align: text-top;
+    position: relative;
+    font-size: 3.5rem
    
 }
 h1{
