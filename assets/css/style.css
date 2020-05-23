@@ -24,7 +24,6 @@ body {
 #logo {
     color:#f8f9faed;
     padding-left: 10px;
-    vertical-align: text-top;
     position: relative;
     font-size: 4rem;
     float: right;
@@ -116,6 +115,9 @@ h1{
     width: 70%;
     left: 7.5rem;
     }
+    #logo{
+        width:50%
+    }
 }
 
 @media only screen  and (min-width : 1224px) {
@@ -123,6 +125,10 @@ h1{
     width: 70%;
     left: 13.5rem;
     }
+    #logo{
+        width:50%
+    }
+
 }
 
 
