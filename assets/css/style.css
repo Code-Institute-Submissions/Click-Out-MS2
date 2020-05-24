@@ -84,10 +84,11 @@ h1{
     text-align: center;
 }
 .instruction-container{
-    position: relative;
+    position: fixed;
     border-style: solid;
-    border-color:  #634d777a;
+    border-color: #634d7763;
     bottom: 17rem;
+    height: 40vh;
 }
 .instruction-container span {
     font-weight: 600;
