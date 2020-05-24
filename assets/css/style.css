@@ -51,16 +51,14 @@ h1{
 
 /*--buttons/level --*/
 .start-button{
-
-    
-    position: relative;
-    bottom: 15rem;
-   text-align: center;
+ 
+ position: relative;
+text-align: center;
 }
+
 .reset-button{
     
     position: relative;
-    bottom: 15rem;
     text-align: center;
     visibility: hidden;
 }
@@ -101,11 +99,6 @@ h1{
 }
 
 /*--Game responsiveness--*/
-
-
-@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
-
-}
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 .grid-column{
