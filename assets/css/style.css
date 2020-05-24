@@ -15,20 +15,21 @@ body {
 #game-title {
     text-align: center;
     margin-bottom: 40px;
-    position: relative;
     margin-top: 30px;
     
 }
 
 
 #logo {
-    color:#f8f9faed;
+    width: 100%;
+    color: #f8f9faed;
     padding-left: 10px;
     position: relative;
     font-size: 4rem;
-    float: right;
+    float: left;
     bottom: 20px;
     padding-right: 25px;
+    text-align: end;
    
 }
 
@@ -116,9 +117,6 @@ h1{
     width: 70%;
     left: 7.5rem;
     }
-    #logo{
-        width:50%
-    }
 }
 
 @media only screen  and (min-width : 1224px) {
@@ -126,10 +124,6 @@ h1{
     width: 70%;
     left: 13.5rem;
     }
-    #logo{
-        width:50%
-    }
-
 }
 
 
