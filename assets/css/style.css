@@ -123,6 +123,8 @@ h1{
     .instruction-container{
     width: 70%;
     left: 13.5rem;
+    height: 30vh;
+    bottom: 50%;
     }
     
 
