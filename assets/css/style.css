@@ -83,13 +83,15 @@ h1{
     font-weight: bold;
     text-align: center;
 }
+
 .instruction-container{
-    position: fixed;
+    position: relative;
     border-style: solid;
     border-color: #634d7763;
-    bottom: 17rem;
-    height: 40vh;
+    height: 30vh;
+    left: 9%;
 }
+
 .instruction-container span {
     font-weight: 600;
     text-align: center;
@@ -113,9 +115,6 @@ h1{
         width: 60px;
         height: 70px;
     }
- .instruction-container {
-   
-}
 #logo{
     padding-right: 0;
 }
