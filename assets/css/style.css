@@ -88,8 +88,7 @@ h1{
     position: relative;
     border-style: solid;
     border-color: #634d7763;
-    height: 30vh;
-    left: 9%;
+    height: 40vh;
 }
 
 .instruction-container span {
@@ -105,9 +104,7 @@ h1{
 
 
 @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
-.instruction-container {
-    height: 50vh;
-}
+
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
@@ -124,6 +121,7 @@ h1{
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 .instruction-container{
     width: 70%;
+    left: 14%;
    
     
     }
@@ -132,7 +130,7 @@ h1{
 @media only screen  and (min-width : 1224px) {
     .instruction-container{
     width: 70%;
-    height: 30vh;
+    left: 14%;
     }
 }
 
