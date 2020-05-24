@@ -88,12 +88,12 @@ h1{
     position: relative;
     border-style: solid;
     border-color: #634d7763;
-    height: 40vh;
 }
 
 .instruction-container span {
     font-weight: 600;
     text-align: center;
+    font-size: xx-large;
 }
 /*-- css added in js --*/
 .visibility{
