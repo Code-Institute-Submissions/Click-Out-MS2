@@ -47,6 +47,7 @@ h1{
     width: 100px;
     display: inline-block;
     background-color: #f8f9faed;
+    visibility: hidden;
 }
 
 /*--buttons/level --*/

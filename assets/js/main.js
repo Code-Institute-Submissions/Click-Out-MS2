@@ -2,11 +2,10 @@
 
 $ (document).ready(function () {
     $(".grid-column").addClass("visibility");
-    $("#game-title").hide().fadeIn(3000);
-    $("#logo").delay(1500).hide().fadeIn(2000);
-    $(".instruction-container").delay(2000).hide().fadeIn();
-
-
+    $("#logo").hide().fadeIn(3000);
+    $("#game-title").delay(1500).hide().slideDown();
+    $(".instruction-container").delay(2000).hide().slideDown()
+    $(".start-button").delay(3500).hide().fadeIn();   
 
 });
   
