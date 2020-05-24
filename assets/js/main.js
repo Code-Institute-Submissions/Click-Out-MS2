@@ -1,4 +1,4 @@
-//landing page
+    //landing page
 
 $ (document).ready(function () {
     $(".grid-column").addClass("visibility");
@@ -8,5 +8,5 @@ $ (document).ready(function () {
     $(".start-button").delay(3500).hide().fadeIn();   
 
 });
-  
 
+     // variables 
