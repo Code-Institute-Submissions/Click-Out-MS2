@@ -108,6 +108,9 @@ h1{
  .instruction-container {
     bottom: 30%;
 }
+#logo{
+    padding-right: 0;
+}
 }
 
 
