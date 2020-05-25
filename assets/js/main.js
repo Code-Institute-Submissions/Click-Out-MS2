@@ -13,23 +13,19 @@ $ (document).ready(function () {
 
 const startButton = document.getElementsByClassName("start-button");
 const restButton  = document.getElementsByClassName("reset-button");
-const instructionBox = document.getElementsByClassName("instruction-container");
+const showLevelDiv = document.getElementsByClassName("level-div");
 
 
 
 //variables 
 let gameGrid = document.getElementById("grid-column");
-let startButtonShow = true;
 
 
 
 // Event listener 
  
-$(".start-button").click(function (){
-instructionBox.addClass(".visibility");
-startButton.addClass(".visibility");
-gameGrid.addClass(".show")
 
+$(".start-button").click(function() {
+    $(".start-button").hide();
 
-
-});
+  })
