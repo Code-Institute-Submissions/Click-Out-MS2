@@ -99,6 +99,9 @@ text-align: center;
     visibility: hidden;
 }
 
+.show{
+    visibility: visible;
+}
 /*--Game responsiveness--*/
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {

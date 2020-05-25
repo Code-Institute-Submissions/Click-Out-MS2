@@ -16,9 +16,20 @@ const restButton  = document.getElementsByClassName("reset-button");
 const instructionBox = document.getElementsByClassName("instruction-container");
 
 
+
 //variables 
-let gameGrid = document.getElementsById("grid-column")
+let gameGrid = document.getElementById("grid-column");
+let startButtonShow = true;
+
 
 
 // Event listener 
  
+$(".start-button").click(function (){
+instructionBox.addClass(".visibility");
+startButton.addClass(".visibility");
+gameGrid.addClass(".show")
+
+
+
+});
