@@ -9,4 +9,16 @@ $ (document).ready(function () {
 
 });
 
-     // variables 
+     // DOM Variables 
+
+const startButton = document.getElementsByClassName("start-button");
+const restButton  = document.getElementsByClassName("reset-button");
+const instructionBox = document.getElementsByClassName("instruction-container");
+
+
+//variables 
+let gameGrid = document.getElementsById("grid-column")
+
+
+// Event listener 
+ 
