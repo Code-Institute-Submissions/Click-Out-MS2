@@ -39,6 +39,7 @@ h1{
 
 .grid-row{
     text-align: center;
+
 }
 .grid-container{
     margin-top:30px;
@@ -46,11 +47,17 @@ h1{
 .grid-column{
     height: 100px;
     width: 100px;
-    display: inline-flex;
+    display: inline-block;
     background-color: #f8f9faed;
     visibility: hidden;
+    border: 4px solid #634d7763;
+    
 }
 
+.pattern-color{
+    background-color:#db7093c7;
+                  /*added to grid  when clicked*/
+}
 /*--buttons/level --*/
 .start-button{
  

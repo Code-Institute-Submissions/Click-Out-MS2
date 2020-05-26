@@ -19,11 +19,14 @@ const showLevelDiv = document.getElementsByClassName("level-div");
 
 //variables 
 let gameGrid = document.getElementsByClassName("grid-column");
+let getLevels = ""
+let gridColour =
 
 
 
-// Event listener 
  
+ 
+// click function when the the start button is pressed. Removes button/instruction and shows grid to start game.
 
 $(".start-button").click(function() {
     $(".start-button").hide();
@@ -32,3 +35,18 @@ $(".start-button").click(function() {
     $(".grid-column").delay(1500).css("visibility","visible").slideDown();
 
 });
+
+// click function when you click on a grid it reveal a colour
+
+$(".grid-column").click(function(){
+    gameGrid.addList.add("grid-column" )
+   
+    if (this.class ==="grid-column"){
+    gameGrid.addList.add("background-color","grid-column" );
+   };
+
+});
+
+    
+
+    
