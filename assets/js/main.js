@@ -1,7 +1,7 @@
     //landing page
 
 $ (document).ready(function () {
-    $("#logo").fadeIn(3000);
+    $("#logo").slideDown(2000);
     $("#game-title").delay(1500).slideDown();
     $(".instruction-container").delay(2000).slideDown()
     $(".start-button").delay(2600).fadeIn();   
