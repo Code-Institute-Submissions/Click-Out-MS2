@@ -27,7 +27,5 @@ let gameGrid = document.getElementsByClassName("grid-column");
 $(".start-button").click(function() {
     $(".start-button").hide();
     $(".instruction-container").delay(700).slideUp();
-    $(".grid-column").delay(1000).show();
-    
 
   });
