@@ -1,10 +1,10 @@
     //landing page
 
 $ (document).ready(function () {
-    $("#logo").show().fadeIn(3000);
-    $("#game-title").delay(1500).show().slideDown();
-    $(".instruction-container").delay(2000).hide().slideDown()
-    $(".start-button").delay(2600).hide().fadeIn();   
+    $("#logo").fadeIn(3000);
+    $("#game-title").delay(1500).slideDown();
+    $(".instruction-container").delay(2000).slideDown()
+    $(".start-button").delay(2600).fadeIn();   
 
 });
 
@@ -27,5 +27,6 @@ let gameGrid = document.getElementsByClassName("grid-column");
 $(".start-button").click(function() {
     $(".start-button").hide();
     $(".instruction-container").delay(700).slideUp();
+    
 
   });
