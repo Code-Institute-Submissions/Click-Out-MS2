@@ -4,7 +4,8 @@ $ (document).ready(function () {
     $("#logo").slideDown(2000);
     $("#game-title").delay(1500).slideDown();
     $(".instruction-container").delay(2000).slideDown()
-    $(".start-button").delay(2600).fadeIn();   
+    $(".start-button").delay(2600).fadeIn();
+    $(".grid-column").show();
 
 });
 
@@ -28,6 +29,6 @@ $(".start-button").click(function() {
     $(".start-button").hide();
     $(".instruction-container").delay(700).slideUp();
     $(".level-div").delay(900).slideDown();
-    
+    $(".grid-column").delay(1500).css("visibility","visible").slideDown();
 
-  });
+});
