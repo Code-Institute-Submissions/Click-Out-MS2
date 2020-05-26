@@ -1,8 +1,8 @@
     //landing page
 
 $ (document).ready(function () {
-    $("#logo").hide().fadeIn(3000);
-    $("#game-title").delay(1500).hide().slideDown();
+    $("#logo").show().fadeIn(3000);
+    $("#game-title").delay(1500).show().slideDown();
     $(".instruction-container").delay(2000).hide().slideDown()
     $(".start-button").delay(2600).hide().fadeIn();   
 
@@ -17,7 +17,7 @@ const showLevelDiv = document.getElementsByClassName("level-div");
 
 
 //variables 
-let gameGrid = document.getElementById("grid-column");
+let gameGrid = document.getElementsByClassName("grid-column");
 
 
 
@@ -27,6 +27,7 @@ let gameGrid = document.getElementById("grid-column");
 $(".start-button").click(function() {
     $(".start-button").hide();
     $(".instruction-container").delay(700).slideUp();
+    $(".grid-column").delay(1000).show();
     
 
   });
