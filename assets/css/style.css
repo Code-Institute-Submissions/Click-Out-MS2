@@ -46,7 +46,7 @@ h1{
 .grid-column{
     height: 100px;
     width: 100px;
-    display: inline-block;
+    display: inline-flex;
     background-color: #f8f9faed;
     visibility: hidden;
 }
@@ -132,6 +132,9 @@ display: none;
     width: 70%;
     left: 14%;
     }
+    .grid-container{
+    margin-top:0;
+}
 }
 
 
