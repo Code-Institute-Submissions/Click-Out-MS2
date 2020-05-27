@@ -36,16 +36,7 @@ $(".start-button").click(function() {
 
 });
 
-// click function when you click on a grid it reveal a colour
 
-$(".grid-column").click(function(){
-    gameGrid.addList.add("grid-column" )
-   
-    if (this.class ==="grid-column"){
-    gameGrid.addList.add("background-color","grid-column" );
-   };
-
-});
 
     
 
