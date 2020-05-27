@@ -13,14 +13,13 @@ $ (document).ready(function () {
 
 const startButton = document.getElementsByClassName("start-button");
 const restButton  = document.getElementsByClassName("reset-button");
-const showLevelDiv = document.getElementsByClassName("level-div");
-
 
 
 //variables 
-let gameGrid = document.getElementsByClassName("grid-column");
+let pattern =Array.from(document.getElementsByClassName("grid-column"));
 let getLevels = ""
 clickedSquares = [];
+
 
 
 
@@ -45,8 +44,13 @@ $ ("div .grid-column"). on ("click", function (){
 $ (this).addClass("color");
 clickedSquares.push(
     $ (this));
-
 });
+
+
+// shuffle array created using Fisher-Yeats shuffle method
+
+
+
     
 
     
