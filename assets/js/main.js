@@ -20,7 +20,7 @@ const showLevelDiv = document.getElementsByClassName("level-div");
 //variables 
 let gameGrid = document.getElementsByClassName("grid-column");
 let getLevels = ""
-let gridColour =
+
 
 
 
@@ -37,7 +37,12 @@ $(".start-button").click(function() {
 });
 
 
+// click function  for click each grid
 
+$ ("div .grid-column"). on ("click", function (){
+ console.log("i just clicked a square"); 
+$ (this).addClass("color");
+});
     
 
     
