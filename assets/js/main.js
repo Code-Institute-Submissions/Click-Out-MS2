@@ -73,22 +73,3 @@ main();
     
 
     
-/*const showPattern = (panel) => {
-    return new Promise ((resolve, _reject) =>{
-        panel.className += "color";
-        setTimeout (() => {
-            panel.className.replace("color" ,
-             "")
-             resolve();
-        },500);
-    });
-    
-};
- 
-const main = async () =>{
-    for (const panel of pattern){
-        await showPattern (panel)
-    }
-}
-    
-main();*/
