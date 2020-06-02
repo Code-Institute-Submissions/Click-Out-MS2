@@ -47,8 +47,7 @@ clickedSquares.push(
 });
 
 
-// shuffle array functions 
-
+// array functon highlighting each square 
 
 function showPattern (panel){
     return new Promise ((resolve, _reject) =>{
