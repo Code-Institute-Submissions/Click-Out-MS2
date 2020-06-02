@@ -45,30 +45,3 @@ $ (this).addClass("color");
 clickedSquares.push(
     $ (this));
 });
-
-
-// array functon highlighting each square 
-
-function showPattern (panel){
-    return new Promise ((resolve, _reject) =>{
-        panel.className += "color";
-        setTimeout (() => {
-            panel.className.replace("color" ,
-             "")
-             resolve();
-        },1000);
-    });
-    
-};
- 
-const main = async () =>{
-    for (const panel of pattern){
-        await showPattern (panel)
-    }
-}
-    
-main();
-
-    
-
-    
