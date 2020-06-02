@@ -16,7 +16,7 @@ body {
     text-align: center;
     margin-bottom: 40px;
     margin-top: 30px;
-    display: none;
+    /*display: none;*/
 }
 
 
@@ -29,7 +29,7 @@ body {
     float: left;
     padding-right:10rem;
     text-align: end;
-    display: none;
+    /*display: none;*/
    
 }
 
@@ -49,7 +49,7 @@ h1{
     width: 100px;
     display: inline-block;
     background-color: #f8f9faed;
-    visibility: hidden;
+   /* visibility: hidden;*/
     border: 4px solid #634d7763;
     
 }
@@ -79,7 +79,7 @@ display: none;
     font-size: 1.5rem;
     position: relative;
     font-weight:bold;
-    display: none;
+    /*display: none;*/
 
 
 }
@@ -96,7 +96,7 @@ display: none;
     position: relative;
     border-style: solid;
     border-color: #634d7763;
-    display: none;
+    /*display: none;*/
 }
 
 .instruction-container span {

@@ -1,5 +1,5 @@
     //landing page
-
+/*
 $ (document).ready(function () {
     $("#logo").slideDown(2000);
     $("#game-title").delay(1500).slideDown();
@@ -44,4 +44,4 @@ $ ("div .grid-column"). on ("click", function (){
 $ (this).addClass("color");
 clickedSquares.push(
     $ (this));
-});
+}); */
