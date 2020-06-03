@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 
 /*--Colours--*/
@@ -7,7 +7,7 @@ body {
 }
 
 .instruction-container {
-    background-color: #db7093c7;
+    background-color:#f8f9faed;
 }
 
 
@@ -90,6 +90,7 @@ display: none;
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 .instruction-container{
