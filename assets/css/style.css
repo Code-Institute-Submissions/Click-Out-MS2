@@ -99,11 +99,6 @@ display: none;
     /*display: none;*/
 }
 
-.instruction-container span {
-    font-weight: 600;
-    text-align: center;
-    font-size: xx-large;
-}
 /*-- css added in js --*/
 .visibility{
     visibility: hidden;
