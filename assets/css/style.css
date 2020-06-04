@@ -17,6 +17,7 @@ body {
     margin-bottom: 40px;
     margin-top: 30px;
     font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
     /*display: none;*/
 }
 
@@ -81,18 +82,18 @@ display: none;
 }
 
 #level{
-    font-size: 3rem;
+    font-size: 1.75rem;
     font-weight: 500;
-    right: 7rem;
+    right: 2rem;
     position: relative;
     /*display: none;*/
 }
 
 #time{ 
-    font-size: 3rem;
+    font-size: 1.75rem;
     position: relative;
     font-weight: 500;
-    left: 7rem;
+    left: 2rem;
     /*display: none;*/
 }
 
@@ -140,6 +141,17 @@ display: none;
    
     
     }
+
+    #level{
+    font-size: 3rem;
+    right: 7rem;
+}
+
+#time{ 
+    font-size: 3rem; 
+    left: 7rem;
+
+}
 }
 
 @media only screen  and (min-width : 1224px) {
@@ -150,6 +162,18 @@ display: none;
     .grid-container{
     margin-top:0;
 }
+
+#level{
+    font-size: 3rem;
+    right: 7rem;
+}
+
+#time{ 
+    font-size: 3rem; 
+    left: 7rem;
+
+}
+
 }
 
 
