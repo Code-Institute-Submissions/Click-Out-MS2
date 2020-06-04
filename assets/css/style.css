@@ -59,7 +59,7 @@ h1{
     background-color:#db7093c7;
                   /*added to grid  when clicked*/
 }
-/*--buttons/level --*/
+/*--buttons/level/time --*/
 .start-button{
  
  position: relative;
@@ -73,16 +73,27 @@ display: none;
     text-align: center;
     visibility: hidden;
 }
-    /*visibility:hidden;(visibility will be hidden at first only to be shown when player fails or want to start again)*/
+
+
+.level-time-container {
+    position: relative;
+    text-align: center;
+}
 
 #level{
-    text-align:center;
-    font-size: 1.5rem;
+    font-size: 3rem;
+    font-weight: 500;
+    right: 7rem;
     position: relative;
-    font-weight:bold;
     /*display: none;*/
+}
 
-
+#time{ 
+    font-size: 3rem;
+    position: relative;
+    font-weight: 500;
+    left: 7rem;
+    /*display: none;*/
 }
 
 /*--instruction box--*/
