@@ -18,7 +18,7 @@ body {
     margin-top: 30px;
     font-family: 'Roboto', sans-serif;
     font-weight: bolder;
-    /*display: none;*/
+    display: none;
 }
 
 
@@ -31,7 +31,7 @@ body {
     float: left;
     padding-right:10rem;
     text-align: end;
-    /*display: none;*/
+    display: none;
    
 }
 
@@ -51,7 +51,7 @@ h1{
     width: 100px;
     display: inline-block;
     background-color: #f8f9faed;
-   visibility: hidden;
+     visibility: hidden;
     border: 4px solid #634d7763;
     
 }

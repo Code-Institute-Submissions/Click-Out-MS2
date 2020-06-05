@@ -17,29 +17,14 @@ let getInstructionContainer = document.getElementsByClassName("instruction-conta
     
     //landing page
 
-/*$ (document).ready(function () {
+$ (document).ready(function () {
     $("#logo").slideDown(2000);
     $("#game-title").delay(1500).slideDown();
     $(".instruction-container").delay(2000).slideDown();
-
+    $(".instruction-container").delay(1000).slideUp();
 }); 
 
-     // DOM Variables 
-
-const startButton = document.getElementsByClassName("start-button");
-const restButton  = document.getElementsByClassName("reset-button");
-
-
-//variables 
-let pattern =Array.from(document.getElementsByClassName("grid-column"));
-let getLevels = ""
-clickedSquares = [];
-
-
-
-
-
- 
+/*
  
 // click function when the the start button is pressed. Removes button/instruction and shows grid to start game.
 
