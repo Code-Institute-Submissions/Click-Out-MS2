@@ -1,13 +1,28 @@
+    
+// DOM Variables 
+
+const startButton = document.getElementsByClassName("start-button");
+const restButton  = document.getElementsByClassName("reset-button");
+const grid  =  document.getElementsByClassName("reset-button");
+
+//variables 
+let getLevels = ""
+let gameTimer;
+clickedSquares = [];
+let gridChange ;
+let winMessage;
+let loseMessage;
+let getInstructionContainer = document.getElementsByClassName("instruction-container");
+    
+    
     //landing page
-/*
-$ (document).ready(function () {
+
+/*$ (document).ready(function () {
     $("#logo").slideDown(2000);
     $("#game-title").delay(1500).slideDown();
-    $(".instruction-container").delay(2000).slideDown()
-    $(".start-button").delay(2600).fadeIn();
-    $(".grid-column").show();
+    $(".instruction-container").delay(2000).slideDown();
 
-});
+}); 
 
      // DOM Variables 
 
