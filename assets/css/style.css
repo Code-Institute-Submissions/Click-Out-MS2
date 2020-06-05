@@ -54,20 +54,23 @@ h1{
      visibility: hidden;
     border: 4px solid #634d7763;
     
-}
+} 
 /*--buttons/level/time --*/
 .start-button{
  
  position: relative;
 text-align: center;
 display: none;
+margin: 20px;
 }
 
 .reset-button{
     
     position: relative;
     text-align: center;
-    visibility: hidden;
+    display: none;
+    margin: 20px;
+    
 }
 
 
@@ -122,6 +125,10 @@ display: none;
     }
 #logo{
     padding-right: 0;
+}
+
+.instruction-container {
+    top: 6rem;
 }
 }
 

@@ -21,7 +21,8 @@ $ (document).ready(function () {
     $("#logo").slideDown(2000);
     $("#game-title").delay(1500).slideDown();
     $(".instruction-container").delay(2000).slideDown();
-    $(".instruction-container").delay(1000).slideUp();
+    $(".start-button").delay(3000).slideDown();
+
 }); 
 
 /*
