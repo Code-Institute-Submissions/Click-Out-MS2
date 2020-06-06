@@ -22,18 +22,23 @@ $ (document).ready(function () {
     $("#game-title").delay(1500).slideDown();
     $(".instruction-container").delay(2000).slideDown();
     $(".start-button").delay(3000).slideDown();
+    $(".instruction-container").delay(1000).slideUp();
+    $(".grid-column").delay(1500).css("visibility","visible").slideDown();
+    $("#level").delay(900).slideDown();
+    $("#time").delay(900).slideDown();
+
 }); 
 
 
-/**
+/** Start game click function**/
 
-$(".start-button").click(function() {
+/*$(".start-button").click(function() {
+     $(".instruction-container").delay(700).slideUp();
     $(".start-button").hide();
-    $(".instruction-container").delay(700).slideUp();
     $(".level-div").delay(900).slideDown();
     $(".grid-column").delay(1500).css("visibility","visible").slideDown();
 
-});*/
+}); 
 
 /*
 
