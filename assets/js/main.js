@@ -21,7 +21,7 @@ $ (document).ready(function () {
     $("#logo").slideDown(2000);
     $("#game-title").delay(1500).slideDown();
     $(".instruction-container").delay(2000).slideDown();
-    $(".start-button").delay(3000).show();
+    $(".start-button").delay(3000).slideDown();
 }); 
 
 
