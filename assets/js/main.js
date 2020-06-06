@@ -21,13 +21,11 @@ $ (document).ready(function () {
     $("#logo").slideDown(2000);
     $("#game-title").delay(1500).slideDown();
     $(".instruction-container").delay(2000).slideDown();
-    $(".start-button").delay(3000).slideDown();
-
+    $(".start-button").delay(3000).show();
 }); 
 
-/*
- 
-// click function when the the start button is pressed. Removes button/instruction and shows grid to start game.
+
+/**
 
 $(".start-button").click(function() {
     $(".start-button").hide();
@@ -35,8 +33,9 @@ $(".start-button").click(function() {
     $(".level-div").delay(900).slideDown();
     $(".grid-column").delay(1500).css("visibility","visible").slideDown();
 
-});
+});*/
 
+/*
 
 // click function  for click each grid
 
