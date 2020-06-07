@@ -32,6 +32,7 @@ $ (document).ready(function () {
 
 
 /** Start game click function**/
+ 
 
 
 /** Countdown timer  Function taken from stackoverflow questions and adapted **/
@@ -40,7 +41,7 @@ let  timerCountdown = setInterval(function(){
   if(startingTime <= -1){
     clearInterval(timerCountdown);
   } else {
-    document.getElementById("time").innerHTML = startingTime;
+    document.getElementById("seconds").innerHTML = startingTime;
   }
   startingTime -= 1;
 }, 1000);
