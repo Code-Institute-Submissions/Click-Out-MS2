@@ -5,9 +5,10 @@ const startButton = document.getElementsByClassName("start-button");
 const restButton  = document.getElementsByClassName("reset-button");
 const grid  =  document.getElementsByClassName("reset-button");
 
+
 //variables 
+let startingTime = 30;
 let getLevels = ""
-let gameTimer;
 clickedSquares = [];
 let gridChange ;
 let winMessage;
@@ -32,13 +33,17 @@ $ (document).ready(function () {
 
 /** Start game click function**/
 
-/*$(".start-button").click(function() {
-     $(".instruction-container").delay(700).slideUp();
-    $(".start-button").hide();
-    $(".level-div").delay(900).slideDown();
-    $(".grid-column").delay(1500).css("visibility","visible").slideDown();
 
-}); 
+/** Countdown timer  Function taken from stackoverflow questions and adapted **/
+
+let  timerCountdown = setInterval(function(){
+  if(startingTime <= -1){
+    clearInterval(timerCountdown);
+  } else {
+    document.getElementById("time").innerHTML = startingTime;
+  }
+  startingTime -= 1;
+}, 1000);
 
 /*
 
