@@ -8,7 +8,6 @@ const grid  =  document.getElementsByClassName("reset-button");
 //variables 
 let timerCountdown;
 let startButton = document.getElementsByClassName("start-button");
-let clickedButton = true;
 let startingTime = 30;
 let getLevels = ""
 clickedSquares = [];
@@ -16,6 +15,7 @@ let gridChange ;
 let winMessage;
 let loseMessage;
 let getInstructionContainer = document.getElementsByClassName("instruction-container");
+
     
     
     //landing page
@@ -33,10 +33,19 @@ $ (document).ready(function () {
 }); 
 
 
-/** Start game click function**/
+/*
+* Start game on click function*
+*removes the start button*
+*starts the first level of the game*
+* start timer for the first level of game*
+
+*/
  $ (" .start-button"). on ("click", function (){
 
     $(".start-button").remove();
+
+    document.getElementById("number").innerHTML = "1";
+    
     timerCountdown =  setInterval (function () {
   if(startingTime <= -1){
     clearInterval(timerCountdown);
