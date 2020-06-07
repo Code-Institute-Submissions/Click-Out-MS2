@@ -1,12 +1,14 @@
     
 // DOM Variables 
 
-const startButton = document.getElementsByClassName("start-button");
 const restButton  = document.getElementsByClassName("reset-button");
 const grid  =  document.getElementsByClassName("reset-button");
 
 
 //variables 
+let timerCountdown;
+let startButton = document.getElementsByClassName("start-button");
+let clickedButton = true;
 let startingTime = 30;
 let getLevels = ""
 clickedSquares = [];
@@ -32,19 +34,37 @@ $ (document).ready(function () {
 
 
 /** Start game click function**/
- 
+ $ (" .start-button"). on ("click", function (){
 
-
-/** Countdown timer  Function taken from stackoverflow questions and adapted **/
-
-let  timerCountdown = setInterval(function(){
+    
+    timerCountdown =  setInterval (function () {
   if(startingTime <= -1){
     clearInterval(timerCountdown);
   } else {
     document.getElementById("seconds").innerHTML = startingTime;
   }
   startingTime -= 1;
-}, 1000);
+}, 500);
+  
+}); 
+
+ 
+
+/** Countdown timer  Function taken from stackoverflow questions and adapted **/
+ 
+
+
+
+  /* }
+ setInterval (function () {
+  if(startingTime <= -1){
+    clearInterval();
+  } else {
+    document.getElementById("seconds").innerHTML = startingTime;
+  }
+  startingTime -= 1;
+}, 500);
+
 
 /*
 
