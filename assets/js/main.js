@@ -36,7 +36,7 @@ $ (document).ready(function () {
 /** Start game click function**/
  $ (" .start-button"). on ("click", function (){
 
-    
+    $(".start-button").remove();
     timerCountdown =  setInterval (function () {
   if(startingTime <= -1){
     clearInterval(timerCountdown);
@@ -52,18 +52,6 @@ $ (document).ready(function () {
 
 /** Countdown timer  Function taken from stackoverflow questions and adapted **/
  
-
-
-
-  /* }
- setInterval (function () {
-  if(startingTime <= -1){
-    clearInterval();
-  } else {
-    document.getElementById("seconds").innerHTML = startingTime;
-  }
-  startingTime -= 1;
-}, 500);
 
 
 /*
