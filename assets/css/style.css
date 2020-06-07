@@ -82,16 +82,14 @@ margin: 20px;
 #level{
     font-size: 1.75rem;
     font-weight: 500;
-    right: 2rem;
-    position: relative;
+    position: absolute;
     display: none;
 }
 
 #time{ 
     font-size: 1.75rem;
-    position: relative;
+    position: absolute;
     font-weight: 500;
-    left: 2rem;
     display: none;
 }
 
