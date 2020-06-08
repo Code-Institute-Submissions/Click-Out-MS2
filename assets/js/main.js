@@ -2,10 +2,11 @@
 // DOM Variables 
 
 const restButton  = document.getElementsByClassName("reset-button");
-const grid  =  document.getElementsByClassName("reset-button");
+
 
 
 //variables 
+let grid = true;
 let timerCountdown;
 let startButton = document.getElementsByClassName("start-button");
 let startingTime = 30;
@@ -45,7 +46,7 @@ $ (document).ready(function () {
     $(".start-button").remove();
 
     document.getElementById("number").innerHTML = "1";
-    
+
     timerCountdown =  setInterval (function () {
   if(startingTime <= -1){
     clearInterval(timerCountdown);
@@ -63,13 +64,10 @@ $ (document).ready(function () {
  
 
 
-/*
+/* function for removing the squares*/
 
-// click function  for click each grid
-
-$ ("div .grid-column"). on ("click", function (){
+let  clickSquares  = $ (".grid-column").on("click", function(){
  console.log("i just clicked a square"); 
-$ (this).addClass("color");
-clickedSquares.push(
-    $ (this));
-}); */
+ $(this).remove();
+
+}); 
