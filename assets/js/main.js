@@ -7,7 +7,6 @@ const restButton  = document.getElementsByClassName("reset-button");
 
 //variables 
 let grid = true;
-let timerCountdown;
 let startButton = document.getElementsByClassName("start-button");
 let startingTime = 30;
 let getLevels = ""
@@ -46,25 +45,27 @@ $ (document).ready(function () {
     $(".start-button").remove();
 
     document.getElementById("number").innerHTML = "1";
+    
+    timerCountdown();
 
-    timerCountdown =  setInterval (function () {
-  if(startingTime <= -1){
-    clearInterval(timerCountdown);
-  } else {
-    document.getElementById("seconds").innerHTML = startingTime;
-  }
-  startingTime -= 1;
-}, 500);
-  
 }); 
-
- 
+  
 
 /** Countdown timer  Function taken from stackoverflow questions and adapted **/
+  function timerCountdown(){ setInterval (function () {
+  if(startingTime <= -1){
+    clearInterval();
+  } else {
+   document.getElementById("seconds").innerHTML = startingTime;
+  }
+  startingTime -= 1;
+ }, 500);};
+  
  
+  
 
 
-/* function for removing the squares*/
+/* on click function for removing each squares*/
 
 let  clickSquares  = $ (".grid-column").on("click", function(){
  console.log("i just clicked a square"); 
