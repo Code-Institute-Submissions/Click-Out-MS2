@@ -48,15 +48,10 @@ $ (document).ready(function () {
     document.getElementById("number").innerHTML = "1";
 
     timerCountdown();
+    clickSquares();
 
 }); 
-  /** grid column on click function **/
 
- $ (".grid-column").on("click", function(){
- clickSquares();
-
-}); 
-  
 /** Countdown timer  Function taken from stackoverflow questions and adapted **/
 
   function timerCountdown(){ setInterval (function () {
@@ -67,11 +62,7 @@ $ (document).ready(function () {
   }
   startingTime -= 1;
  }, 500);};
-  
-  $ (".grid-column").on("click", function(){
- clickSquares();
-
-}); 
+   
   
 /** function to removes each square when clicked**/
 
@@ -84,4 +75,8 @@ function clickSquares() {
 });
 
 };
+///clickSquares();
+
+/** condition statments fuctions to **/
+
 
