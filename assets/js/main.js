@@ -7,15 +7,17 @@ const restButton  = document.getElementsByClassName("reset-button");
 
 //variables 
 let squares;
-let grid = true;
 let startButton = document.getElementsByClassName("start-button");
 let startingTime = 20;
 let getLevels = ""
 clickedSquares = [];
-let gridChange ;
 let winMessage;
 let loseMessage;
-let getInstructionContainer = document.getElementsByClassName("instruction-container");
+let instructionBox = document.getElementsByClassName("instruction-container");
+let clickNumber;
+const grid = document.getElementsByClassName("grid-column")
+const messageBoard = document.getElementsByClassName("message")
+
 
     
     
@@ -49,7 +51,8 @@ $ (document).ready(function () {
 
     timerCountdown();
     clickSquares();
-    playingGame();
+
+    //playingGame();
 
 }); 
 
@@ -69,20 +72,20 @@ $ (document).ready(function () {
 
 
 function clickSquares() {
- squares  = $ (".grid-column").on("click", function(){
+  $ (".grid-column").on("click", function(){
  console.log("i just clicked a square"); 
  $(this).remove();
  clickedSquares.push( $ (this))
 });
-
+//gameOver();
+//playingGame();
 };
 
 /** function for when game start when pressignstart button **/
-
-/*function playingGame(){
- if (timerCountdown <= 20 && clickSquares == true){
-     document.getElementsByClassName(" instruction-container").slideUp().innerHTML = "Well done"
-    
-}
-};*/
-
+function playingGame(){
+if ( startingTime > 19) { 
+clickSquares();
+} 
+};
+playingGame();
+/**game over function*/
