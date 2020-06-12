@@ -50,9 +50,9 @@ $ (document).ready(function () {
     document.getElementById("number").innerHTML = "1";
 
     timerCountdown();
-    clickSquares();
+    //clickSquares();
 
-    //playingGame();
+    playingGame();
 
 }); 
 
@@ -83,9 +83,17 @@ function clickSquares() {
 
 /** function for when game start when pressignstart button **/
 function playingGame(){
-if ( startingTime > 19) { 
+if ( startingTime > 19 && clickedSquares.length == 0) { 
 clickSquares();
 } 
 };
-playingGame();
-/**game over function*/
+
+/**function noGame () {
+/** not allowed to click squares when timer is on zero */
+let finishedTime = 0; 
+
+
+licked function*/
+
+/**reset game**/
+$ 
