@@ -88,12 +88,14 @@ clickSquares();
 } 
 };
 
-/**function noGame () {
+/**game over function*/
+
+
+
 /** not allowed to click squares when timer is on zero */
-let finishedTime = 0; 
 
 
-licked function*/
+
+/**amount of sqaures clicked function*/
 
 /**reset game**/
-$ 

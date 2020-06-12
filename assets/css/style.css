@@ -111,7 +111,21 @@ margin: 20px;
     display: none;
     top:10rem;
 }
+/**Game over container**/
+#game-over{
+    position: relative;
+    border-style: solid;
+    border-color: #634d7763;
+    display: none;
+    top:10rem;
+}
 
+#game-over p {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
 /*-- css added in js --*/
 .show{
     visibility: visible;
