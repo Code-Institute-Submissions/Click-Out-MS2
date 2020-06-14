@@ -50,8 +50,6 @@ $ (document).ready(function () {
     document.getElementById("number").innerHTML = "1";
 
     timerCountdown();
-    //clickSquares();
-
     playingGame();
 
 }); 
@@ -60,11 +58,11 @@ $ (document).ready(function () {
 
   function timerCountdown(){ setInterval (function () {
   if(startingTime <= -1){
-    clearInterval();
+    clearInterval(timerCountdown);
   } else {
    document.getElementById("seconds").innerHTML = startingTime;
   }
-  startingTime -= 1;
+  startingTime --;
  }, 500);};
    
   
@@ -83,14 +81,12 @@ function clickSquares() {
 
 /** function for when game start when pressignstart button **/
 function playingGame(){
-if ( startingTime > 19 && clickedSquares.length == 0) { 
+if ( startingTime == 20 && clickedSquares.length == 0) { 
 clickSquares();
 } 
 };
 
 /**game over function*/
-
-
 
 /** not allowed to click squares when timer is on zero */
 
