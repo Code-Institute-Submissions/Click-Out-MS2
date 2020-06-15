@@ -55,15 +55,28 @@ $ (document).ready(function () {
 
 /** Countdown timer  Function taken from stackoverflow questions and adapted **/
 
-let seconds = 20;
+let seconds = 20 ;
 let countDown = setInterval(function(){
   seconds = seconds - 1;
+  document.getElementById("seconds").innerHTML= seconds;
   console.log(seconds);
-  if (seconds === 0){
+  if (seconds == 0){
     clearInterval(countDown);
 }
 }, 1000);
 
+
+/** function to removes each square when clicked**/
+
+/* function timerCountdown(){ setInterval (function () {
+  if(startingTime <= -1){
+    clearInterval(timerCountdown);
+  } else {
+   document.getElementById("seconds").innerHTML = startingTime;
+  }
+  startingTime --;
+ }, 500);};
+   
   
 /** function to removes each square when clicked**/
 
@@ -74,8 +87,6 @@ function clickSquares() {
  clickedSquares.push( $ (this))
   $(this).remove();
 });
-//gameOver();
-//playingGame();
 };
 
 /** function for when game start when pressignstart button **/
