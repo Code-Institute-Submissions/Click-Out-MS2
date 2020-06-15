@@ -8,7 +8,7 @@ const restButton  = document.getElementsByClassName("reset-button");
 //variables 
 let squares;
 let startButton = document.getElementsByClassName("start-button");
-let startingTime = 20;
+let startingTime = 20 %60;
 let getLevels = ""
 clickedSquares = [];
 let winMessage;
@@ -49,22 +49,21 @@ $ (document).ready(function () {
 
     document.getElementById("number").innerHTML = "1";
 
-    timerCountdown();
-    playingGame();
+    seconds 
 
 }); 
 
 /** Countdown timer  Function taken from stackoverflow questions and adapted **/
 
-  function timerCountdown(){ setInterval (function () {
-  if(startingTime <= -1){
-    clearInterval(timerCountdown);
-  } else {
-   document.getElementById("seconds").innerHTML = startingTime;
-  }
-  startingTime --;
- }, 500);};
-   
+let seconds = 20;
+let countDown = setInterval(function(){
+  seconds = seconds - 1;
+  console.log(seconds);
+  if (seconds === 0){
+    clearInterval(countDown);
+}
+}, 1000);
+
   
 /** function to removes each square when clicked**/
 
@@ -72,21 +71,14 @@ $ (document).ready(function () {
 function clickSquares() {
   $ (".grid-column").on("click", function(){
  console.log("i just clicked a square"); 
- $(this).remove();
  clickedSquares.push( $ (this))
+  $(this).remove();
 });
 //gameOver();
 //playingGame();
 };
 
 /** function for when game start when pressignstart button **/
-function playingGame(){
-if ( startingTime == 20 && clickedSquares.length == 0) { 
-clickSquares();
-} 
-};
-
-/**game over function*/
 
 /** not allowed to click squares when timer is on zero */
 
