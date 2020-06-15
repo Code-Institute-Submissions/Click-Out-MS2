@@ -8,7 +8,6 @@ const restButton  = document.getElementsByClassName("reset-button");
 //variables 
 let squares;
 let startButton = document.getElementsByClassName("start-button");
-let startingTime = 20 %60;
 let getLevels = ""
 clickedSquares = [];
 let winMessage;
@@ -49,34 +48,36 @@ $ (document).ready(function () {
 
     document.getElementById("number").innerHTML = "1";
 
-    seconds 
+   timer();
+   gameOver();
 
 }); 
 
-/** Countdown timer  Function taken from stackoverflow questions and adapted **/
-
 let seconds = 20 ;
-let countDown = setInterval(function(){
-  seconds = seconds - 1;
-  document.getElementById("seconds").innerHTML= seconds;
-  console.log(seconds);
-  if (seconds == 0){
-    clearInterval(countDown);
-}
-}, 1000);
 
 
 /** function to removes each square when clicked**/
 
-/* function timerCountdown(){ setInterval (function () {
-  if(startingTime <= -1){
-    clearInterval(timerCountdown);
-  } else {
-   document.getElementById("seconds").innerHTML = startingTime;
-  }
-  startingTime --;
- }, 500);};
-   
+function timer(){
+
+if(seconds == 20 && clickedSquares.length == 00){
+ let countDown = setInterval(function(){
+  seconds = seconds - 1;
+  document.getElementById("seconds").innerHTML= seconds;
+  if (seconds == 0){
+    clearInterval(countDown);
+}
+}, 1000);
+    }
+    clickSquares();
+}
+ /**gameover function */
+
+function gameOver(){
+    if(seconds == 0 && clickedSquares.length == 9){
+        $("#game-over").slideDown();
+    }
+}
   
 /** function to removes each square when clicked**/
 
