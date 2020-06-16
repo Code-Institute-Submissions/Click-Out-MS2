@@ -69,7 +69,7 @@ if(seconds == 20 && clickedSquares.length == 0){
     }, 1000);
   }
 }
- /**gameover function */
+ /** playingGame function*/
 
 function playingGame(){
     if(seconds == 0 && clickedSquares.length <9){

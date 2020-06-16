@@ -111,7 +111,7 @@ margin: 20px;
     top:10rem;
 }
 /**Game over container**/
-#game-over{
+#game-over, #game-win{
     position: relative;
     border-style: solid;
     border-color: #634d7763;
