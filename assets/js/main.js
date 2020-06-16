@@ -42,14 +42,12 @@ $ (document).ready(function () {
 * start timer for the first level of game*
 
 */
- $ (" .start-button"). on ("click", function (){
+ $ (".start-button"). on ("click", function (){
 
     $(".start-button").remove();
-
     document.getElementById("number").innerHTML = "1";
-
-   timer();
-   gameOver();
+    
+    timer();
 
 }); 
 
@@ -69,7 +67,6 @@ if(seconds == 20 && clickedSquares.length == 00){
 }
 }, 1000);
     }
-    clickSquares();
 }
  /**gameover function */
 
@@ -81,14 +78,12 @@ function gameOver(){
   
 /** function to removes each square when clicked**/
 
-
-function clickSquares() {
-  $ (".grid-column").on("click", function(){
- console.log("i just clicked a square"); 
- clickedSquares.push( $ (this))
-  $(this).remove();
+$ (".grid-column").on("click", function(){
+   console.log("i just clicked a square"); 
+   clickedSquares.push( $ (this))
+   $(this).remove();
 });
-};
+
 
 /** function for when game start when pressignstart button **/
 
