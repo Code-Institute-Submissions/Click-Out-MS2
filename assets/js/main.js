@@ -26,7 +26,7 @@ $ (document).ready(function () {
     $("#logo").slideDown(2000);
     $("#game-title").delay(1500).slideDown();
     $(".instruction-container").delay(2000).slideDown();
-    $(".start-button").delay(3000).slideDown(); //comment this out later
+    $(".start-button").css("bottom","300px").delay(3000).slideDown(); //comment this out later
     $(".instruction-container").delay(1000).slideUp();
     $("#level").delay(900).slideDown();//commment this out later 
     $("#time").delay(900).slideDown();
