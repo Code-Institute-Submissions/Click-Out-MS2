@@ -45,6 +45,7 @@ $ (document).ready(function () {
  $ (".start-button"). on ("click", function (){
 
     $(".start-button").remove();
+
     document.getElementById("number").innerHTML = "1";
     
     timer();
@@ -58,29 +59,30 @@ let seconds = 20 ;
 
 function timer(){
 
-if(seconds == 20 && clickedSquares.length == 00){
+if(seconds == 20 && clickedSquares.length == 0){
  let countDown = setInterval(function(){
   seconds = seconds - 1;
   document.getElementById("seconds").innerHTML= seconds;
   if (seconds == 0){
     clearInterval(countDown);
-}
-}, 1000);
-    }
+      }
+      gameOver();
+    }, 1000);
+  }
 }
  /**gameover function */
 
 function gameOver(){
-    if(seconds == 0 && clickedSquares.length == 9){
+    if(seconds == 0 && clickedSquares.length <9){
         $("#game-over").slideDown();
-    }
+  }
 }
   
 /** function to removes each square when clicked**/
 
 $ (".grid-column").on("click", function(){
    console.log("i just clicked a square"); 
-   clickedSquares.push( $ (this))
+   clickedSquares.push( $ (this)) 
    $(this).remove();
 });
 
