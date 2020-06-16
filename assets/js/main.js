@@ -26,7 +26,7 @@ $ (document).ready(function () {
     $("#logo").slideDown(2000);
     $("#game-title").delay(1500).slideDown();
     $(".instruction-container").delay(2000).slideDown();
-    $(".start-button").css("bottom","300px").delay(3000).slideDown(); //comment this out later
+    $(".start-button").css("bottom","300px").delay(3000).slideDown();
     $(".instruction-container").delay(1000).slideUp();
     $("#level").delay(900).slideDown();//commment this out later 
     $("#time").delay(900).slideDown();
@@ -65,13 +65,13 @@ if(seconds == 20 && clickedSquares.length == 0){
   if (seconds == 0){
     clearInterval(countDown);
       }
-      gameOver();
+      playingGame();
     }, 1000);
   }
 }
  /**gameover function */
 
-function gameOver(){
+function playingGame(){
     if(seconds == 0 && clickedSquares.length <9){
         $("#game-over").slideDown();
     }
@@ -86,12 +86,14 @@ $ (".grid-column").on("click", function(){
 });
 
 
-/** function for when game start when pressignstart button **/
+/** second Level function */
 
-/** not allowed to click squares when timer is on zero */
+function secondLevel(){
+     $("level1").delay(1500).addClass("hide").slideDown();
+     $("level1").delay(1500).addClass("hide").slideDown();
+}
 
 
 
-/**amount of sqaures clicked function*/
 
-/**reset game**/
+
