@@ -75,6 +75,9 @@ function playingGame(){
     if(seconds == 0 && clickedSquares.length <9){
         $("#game-over").slideDown();
     }
+     if(seconds > 0 && clickedSquares.length == 9){
+        $("#game-win").slideDown();
+    }
 }
   
 /** function to removes each square when clicked**/
