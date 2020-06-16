@@ -26,10 +26,9 @@ $ (document).ready(function () {
     $("#logo").slideDown(2000);
     $("#game-title").delay(1500).slideDown();
     $(".instruction-container").delay(2000).slideDown();
-    $(".start-button").delay(3000).slideDown();
+    $(".start-button").delay(3000).slideDown(); //comment this out later
     $(".instruction-container").delay(1000).slideUp();
-    $(".grid-column").delay(1500).css("visibility","visible").slideDown();
-    $("#level").delay(900).slideDown();
+    $("#level").delay(900).slideDown();//commment this out later 
     $("#time").delay(900).slideDown();
 
 }); 
