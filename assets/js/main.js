@@ -86,6 +86,16 @@ function playingGame(){
         level = 2;
 
     }
+    if(seconds > 0 && clickedSquares.length ==12){
+        $("#game-win").slideDown()
+        document.getElementById("number").innerHTML = "3";
+        thirdLevel();
+        timer();
+        seconds = 20;
+        clickedSquares = [];
+        level = 3;
+
+    }
 }
   
 /** function to removes each square when clicked**/
