@@ -76,8 +76,9 @@ function playingGame(){
     if(seconds == 0 && clickedSquares.length <9){
         $("#game-over").slideDown();
     }
-     if(seconds > 0 && clickedSquares.length == 9){
+   if(seconds > 0 && clickedSquares.length == 9){
         $("#game-win").slideDown()
+        document.getElementById("number").innerHTML = "2";
         secondLevel();
         timer();
         seconds = 20;
