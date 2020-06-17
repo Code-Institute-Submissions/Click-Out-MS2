@@ -125,8 +125,8 @@ $ (".grid-column").on("click", function(){
 
 /** final level function  */
 function finalLevel() {
-     $("#level3").delay(1500).remove();
-     $("#level4").delay(2000).removeClass("hide").slideDown(); 
+     $("#level4").delay(1500).remove();
+     $("#level5").delay(2000).removeClass("hide").slideDown(); 
 };
 /** fourth Level function */
 function fourthLevel() {
