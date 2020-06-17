@@ -16,7 +16,7 @@ let instructionBox = document.getElementsByClassName("instruction-container");
 let clickNumber;
 const grid = document.getElementsByClassName("grid-column")
 const messageBoard = document.getElementsByClassName("message")
-
+let currentLevel = 1;
 
     
     
@@ -77,6 +77,12 @@ function playingGame(){
     }
      if(seconds > 0 && clickedSquares.length == 9){
         $("#game-win").slideDown();
+        secondLevel();
+        seconds = 20;
+        timer();
+        clickedSquares = [];
+        level = 2;
+
     }
 }
   
@@ -92,8 +98,8 @@ $ (".grid-column").on("click", function(){
 /** second Level function */
 
 function secondLevel(){
-     $("level1").delay(1500).addClass("hide").slideDown();
-     $("level1").delay(1500).addClass("hide").slideDown();
+     $("#level1").delay(1500).addClass("hide").slideDown();
+     $("#level2").delay(1500).removeClass("hide").slideDown();
 }
 
 
