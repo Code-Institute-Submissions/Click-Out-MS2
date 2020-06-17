@@ -94,6 +94,15 @@ function playingGame(){
         level = 3;
 
     }
+    else if(seconds > 0 && clickedSquares.length == 20 ){
+        document.getElementById("number").innerHTML = "4";
+        fourthLevel();
+        timer();
+        seconds = 20;
+        clickedSquares = [];
+        level = 4;
+
+    }
 
 };
   
@@ -104,6 +113,12 @@ $ (".grid-column").on("click", function(){
    clickedSquares.push( $ (this)) 
    $(this).remove();
 });
+
+/** fourth Level function */
+function fourthLevel() {
+     $("#level3").delay(1500).addClass("hide").slideDown();
+     $("#level4").delay(2000).removeClass("hide").slideDown(); 
+};
 /** third Level function */
 function thirdLevel() {
      $("#level2").delay(1500).addClass("hide").slideDown();
