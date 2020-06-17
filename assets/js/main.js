@@ -17,6 +17,7 @@ let clickNumber;
 const grid = document.getElementsByClassName("grid-column")
 const messageBoard = document.getElementsByClassName("message")
 let currentLevel = 1;
+let levels = document.getElementById("number")
 
     
     
@@ -76,10 +77,10 @@ function playingGame(){
         $("#game-over").slideDown();
     }
      if(seconds > 0 && clickedSquares.length == 9){
-        $("#game-win").slideDown();
+        $("#game-win").slideDown()
         secondLevel();
-        seconds = 20;
         timer();
+        seconds = 20;
         clickedSquares = [];
         level = 2;
 
@@ -99,10 +100,10 @@ $ (".grid-column").on("click", function(){
 
 function secondLevel(){
      $("#level1").delay(1500).addClass("hide").slideDown();
-     $("#level2").delay(1500).removeClass("hide").slideDown();
+     $("#level2").delay(2000).removeClass("hide").slideDown();
+    setTimeout(() => { $("#game-win").remove();}, 1000); 
+
+
 }
-
-
-
 
 
