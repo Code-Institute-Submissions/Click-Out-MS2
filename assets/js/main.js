@@ -103,6 +103,15 @@ function playingGame(){
         level = 4;
 
     }
+    else if(seconds > 0 && clickedSquares.length == 20 ){
+        document.getElementById("number").innerHTML = "5";
+        finalLevel();
+        timer();
+        seconds = 20;
+        clickedSquares = [];
+        level = 5;
+
+    }
 
 };
   
@@ -114,20 +123,25 @@ $ (".grid-column").on("click", function(){
    $(this).remove();
 });
 
+/** final level function  */
+function finalLevel() {
+     $("#level3").delay(1500).remove();
+     $("#level4").delay(2000).removeClass("hide").slideDown(); 
+};
 /** fourth Level function */
 function fourthLevel() {
-     $("#level3").delay(1500).addClass("hide").slideDown();
+     $("#level3").delay(1500).remove();
      $("#level4").delay(2000).removeClass("hide").slideDown(); 
 };
 /** third Level function */
 function thirdLevel() {
-     $("#level2").delay(1500).addClass("hide").slideDown();
+     $("#level2").delay(1500).remove();
      $("#level3").delay(2000).removeClass("hide").slideDown(); 
 };
 
 /** second Level function */
 
 function secondLevel(){
-     $("#level1").delay(1500).addClass("hide").slideDown();
+     $("#level1").delay(1500).remove();
      $("#level2").delay(2000).removeClass("hide").slideDown();  
 }
