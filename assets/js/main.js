@@ -16,7 +16,7 @@ let instructionBox = document.getElementsByClassName("instruction-container");
 let clickNumber;
 const grid = document.getElementsByClassName("grid-column")
 const messageBoard = document.getElementsByClassName("message")
-let currentLevel = 1;
+let level = 1;
 let levels = document.getElementById("number")
 
     
@@ -52,23 +52,23 @@ $ (document).ready(function () {
 
 }); 
 
-let seconds = 20 ;
+let seconds = 20;
 
 
 /** function to removes each square when clicked**/
 
 function timer(){
 
-if(seconds == 20 && clickedSquares.length == 0){
- let countDown = setInterval(function(){
-  seconds = seconds - 1;
-  document.getElementById("seconds").innerHTML= seconds;
-  if (seconds == 0){
-    clearInterval(countDown);
-      }
-      playingGame();
-    }, 1000);
-  }
+    if(seconds == 20 && clickedSquares.length == 0){
+        let countDown = setInterval(function(){
+            seconds = seconds - 1;
+            document.getElementById("seconds").innerHTML= seconds;
+            if (seconds == 0){
+            clearInterval(countDown);
+            }
+            playingGame();
+        }, 1000);
+    }
 }
  /** playingGame function*/
 
@@ -76,7 +76,7 @@ function playingGame(){
     if(seconds == 0 && clickedSquares.length <9){
         $("#game-over").slideDown();
     }
-  else if(seconds > 0 && clickedSquares.length == 9){
+  else if(seconds > 0 && clickedSquares.length == 9 && level == 1){
         document.getElementById("number").innerHTML = "2";
         $("#level1").delay(1500).addClass("hide");
         $("#level2").delay(2000).removeClass("hide").slideDown();  
@@ -86,7 +86,7 @@ function playingGame(){
         level = 2;
 
     }
-  else if(seconds > 0 && clickedSquares.length == 12 ){
+  else if(seconds > 0 && clickedSquares.length == 12 && level == 2){
         document.getElementById("number").innerHTML = "3";
         $("#level2").delay(1500).addClass("hide");
         $("#level3").delay(2000).removeClass("hide").slideDown(); 
@@ -96,7 +96,7 @@ function playingGame(){
         level = 3;
 
     }
-     else if(seconds > 0 && clickedSquares.length == 16){
+     else if(seconds > 0 && clickedSquares.length == 16 && level == 3){
         document.getElementById("number").innerHTML = "4";
          $("#level3").delay(1500).addClass("hide");
          $("#level4").delay(2000).removeClass("hide").slideDown(); 
@@ -106,15 +106,16 @@ function playingGame(){
         level = 4;
 
     }
-    /** else if(seconds > 0 && clickedSquares.length > 16){
+   /* else if(seconds > 0 && clickedSquares.length == 25 && level == 4){
         document.getElementById("number").innerHTML = "5";
-        finalLevel();
+        $("#level4").delay(1500).addClass("hide");
+        $("#level5").delay(2000).removeClass("hide").slideDown(); 
         timer();
         seconds = 20;
         clickedSquares = [];
         level = 5;
 
-    }**/
+    } */
 
 }
   
@@ -122,13 +123,7 @@ function playingGame(){
 
 $ (".grid-column").on("click", function(){ 
    console.log(clickedSquares);
-   clickedSquares.push( $ (this));
+   clickedSquares.push($(this));
    $(this).remove();
 });
-
-/** final level function  */
-function finalLevel() {
-     $("#level4").delay(1500).addClass("hide");
-     $("#level5").delay(2000).removeClass("hide").slideDown(); 
-}
 
