@@ -110,13 +110,23 @@ function playingGame(){
         document.getElementById("number").innerHTML = "5";
          $("#level4").delay(1500).addClass("hide");
          $("#level5").delay(2000).removeClass("hide").slideDown(); 
-        timer();
+         timer();
         seconds = 20;
         clickedSquares = [];
         level = 5;
 
 
     } 
+     else if(seconds > 0 && clickedSquares.length == 25 && level == 5){
+        document.getElementById("number").innerHTML = "6"; 
+         timer();
+        seconds = 20;
+        clickedSquares = [];
+        level = 6;
+
+
+    } 
+
 
 }
   
@@ -128,3 +138,8 @@ $ (".grid-column").on("click", function(){
    $(this).remove();
 });
 
+/**levels 6-10 functions */
+
+function level6(){
+    $("#grid-column").css
+}
