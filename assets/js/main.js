@@ -140,6 +140,3 @@ $ (".grid-column").on("click", function(){
 
 /**levels 6-10 functions */
 
-function level6(){
-    $(".grid-column").css("margin","50px")
-}
