@@ -119,6 +119,10 @@ function playingGame(){
     } 
      else if(seconds > 0 && clickedSquares.length == 25 && level == 5){
         document.getElementById("number").innerHTML = "6"; 
+        $(".grid-column").css("margin","60px");
+        $("#level5").delay(1500).addClass("hide");
+        $("#level6").delay(2000).removeClass("hide").slideDown();
+        
          timer();
         seconds = 20;
         clickedSquares = [];
