@@ -96,26 +96,27 @@ function playingGame(){
         level = 3;
 
     }
-     else if(seconds > 0 && clickedSquares.length == 16 && level == 3){
+   else if(seconds > 0 && clickedSquares.length == 16 && level == 3){
         document.getElementById("number").innerHTML = "4";
          $("#level3").delay(1500).addClass("hide");
          $("#level4").delay(2000).removeClass("hide").slideDown(); 
-        timer();
+        timer()
         seconds = 20;
         clickedSquares = [];
         level = 4;
 
     }
-   /* else if(seconds > 0 && clickedSquares.length == 25 && level == 4){
+   else if(seconds > 0 && clickedSquares.length == 20 && level == 4){
         document.getElementById("number").innerHTML = "5";
-        $("#level4").delay(1500).addClass("hide");
-        $("#level5").delay(2000).removeClass("hide").slideDown(); 
+         $("#level4").delay(1500).addClass("hide");
+         $("#level5").delay(2000).removeClass("hide").slideDown(); 
         timer();
         seconds = 20;
         clickedSquares = [];
         level = 5;
 
-    } */
+
+    } 
 
 }
   
