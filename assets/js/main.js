@@ -139,6 +139,16 @@ else if(seconds > 0 && clickedSquares.length == 25 && level == 6){
         clickedSquares = [];
         level = 7;
     } 
+    else if(seconds > 0 && clickedSquares.length == 21 && level == 7){
+        document.getElementById("number").innerHTML = "8"; 
+        $(".grid-column").css("margin","25px");
+        $("#level7").delay(1500).addClass("hide");
+        $("#level8").delay(2000).removeClass("hide").slideDown();
+        timer();
+        seconds = 20;
+        clickedSquares = [];
+        level = 8;
+    }
 }
   
 /** function to removes each square when clicked**/
