@@ -108,6 +108,7 @@ function playingGame(){
     }
    else if(seconds > 0 && clickedSquares.length == 20 && level == 4){
         document.getElementById("number").innerHTML = "5";
+         $(".grid-column").css("margin","60px");
          $("#level4").delay(1500).addClass("hide");
          $("#level5").delay(2000).removeClass("hide").slideDown(); 
          timer();
@@ -117,18 +118,15 @@ function playingGame(){
 
 
     } 
-     else if(seconds > 0 && clickedSquares.length == 25 && level == 5){
+     else if(seconds > 0 && clickedSquares.length == 15 && level == 5){
         document.getElementById("number").innerHTML = "6"; 
-        $(".grid-column").css("margin","60px");
+        $(".grid-column").css("margin","25px");
         $("#level5").delay(1500).addClass("hide");
         $("#level6").delay(2000).removeClass("hide").slideDown();
-        
-         timer();
+        timer();
         seconds = 20;
         clickedSquares = [];
         level = 6;
-
-
     } 
 
 
