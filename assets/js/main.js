@@ -88,6 +88,7 @@ function playingGame(){
     }
   else if(seconds > 0 && clickedSquares.length == 12 && level == 2){
         document.getElementById("number").innerHTML = "3";
+         $(".grid-column").css("margin","10px");
         $("#level2").delay(1500).addClass("hide");
         $("#level3").delay(2000).removeClass("hide").slideDown(); 
         timer();
@@ -98,6 +99,7 @@ function playingGame(){
     }
    else if(seconds > 0 && clickedSquares.length == 16 && level == 3){
         document.getElementById("number").innerHTML = "4";
+         $(".grid-column").css("margin","10px");
          $("#level3").delay(1500).addClass("hide");
          $("#level4").delay(2000).removeClass("hide").slideDown(); 
         timer()
