@@ -137,6 +137,7 @@ margin: 20px;
     display: none;
 }
 
+
 /*--Game responsiveness--*/
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
