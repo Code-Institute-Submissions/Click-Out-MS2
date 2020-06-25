@@ -171,6 +171,10 @@ else if(seconds > 0 && clickedSquares.length == 21 && level == 6){
         clickedSquares = [];
         level = 10;
     }
+    else if(seconds > 0 && clickedSquares.length == 35 && level == 10){
+        document.getElementById("number").innerHTML = "10"; 
+        $("#game-win").slideDown();
+    }
 }
   
 /** function to removes each square when clicked**/
