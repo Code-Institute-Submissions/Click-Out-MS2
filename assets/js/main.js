@@ -129,7 +129,7 @@ function playingGame(){
         level = 6;
     } 
 
-else if(seconds > 0 && clickedSquares.length == 25 && level == 6){
+else if(seconds > 0 && clickedSquares.length == 21 && level == 6){
         document.getElementById("number").innerHTML = "7"; 
         $(".grid-column").css("margin","25px");
         $("#level6").delay(1500).addClass("hide");
@@ -139,7 +139,7 @@ else if(seconds > 0 && clickedSquares.length == 25 && level == 6){
         clickedSquares = [];
         level = 7;
     } 
-    else if(seconds > 0 && clickedSquares.length == 21 && level == 7){
+    else if(seconds > 0 && clickedSquares.length == 25 && level == 7){
         document.getElementById("number").innerHTML = "8"; 
         $(".grid-column").css("margin","25px");
         $("#level7").delay(1500).addClass("hide");
