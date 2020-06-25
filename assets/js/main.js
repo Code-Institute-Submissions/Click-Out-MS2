@@ -194,6 +194,8 @@ function resetGame (){
    $(".reset-button"). on ("click", function (){
       $("#game-win").remove();
       $(".reset-button").remove();
+      $("#level").slideUp(); 
+      $("#time").slideUp();
     });
 };
 
