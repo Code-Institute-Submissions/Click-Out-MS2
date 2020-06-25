@@ -192,8 +192,7 @@ function resetGame (){
     $(".reset-button").slideDown();
 
    $(".reset-button"). on ("click", function (){
-   $(".reset-button").remove();
-   $(".start-button").slideDown();
-   
-});
+      $("#game-win").remove();
+      $(".reset-button").remove();
+    });
 };
