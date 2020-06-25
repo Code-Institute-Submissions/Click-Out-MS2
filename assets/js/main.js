@@ -206,3 +206,4 @@ function gameOver(){
     $("#level").slideUp(); 
     $("#time").slideUp();
 }
+

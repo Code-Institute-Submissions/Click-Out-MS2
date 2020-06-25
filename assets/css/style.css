@@ -59,7 +59,7 @@ h1{
     display: none;
 }
 /*--buttons/level/time --*/
-.start-button{
+.start-button, .reset-button{
  
 position: relative;
 text-align: center;
@@ -125,7 +125,7 @@ margin: 20px;
     top:10rem;
 }
 
-#game-over p {
+#game-over p, #game-win p {
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
