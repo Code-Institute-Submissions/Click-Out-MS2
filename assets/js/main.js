@@ -73,7 +73,7 @@ function timer(){
  /** playingGame function*/
 
 function playingGame(){
-    if(seconds == 0 && clickedSquares.length <9){
+    if(seconds == 0 && clickedSquares.length < 9){
         $("#game-over").slideDown();
     }
   else if(seconds > 0 && clickedSquares.length == 9 && level == 1){

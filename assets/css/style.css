@@ -132,16 +132,11 @@ margin: 20px;
     font-family: 'Roboto', sans-serif;
 }
 /*-- css added in js --*/
-.show{
-    visibility: visible;
-}
+
 .hide-grid{
     display: none;
 }
 
-.hide{
-    visibility: hidden;
-}
 /*--Game responsiveness--*/
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
