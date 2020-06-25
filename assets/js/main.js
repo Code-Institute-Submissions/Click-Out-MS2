@@ -174,6 +174,7 @@ else if(seconds > 0 && clickedSquares.length == 21 && level == 6){
     else if(seconds > 0 && clickedSquares.length == 35 && level == 10){
         document.getElementById("number").innerHTML = "10"; 
         $("#game-win").slideDown();
+        resetGame();
     }
 }
   
@@ -185,5 +186,14 @@ $ (".grid-column").on("click", function(){
    $(this).remove();
 });
 
-/**levels 6-10 functions */
+/**resetGame function*/
 
+function resetGame (){
+    $(".reset-button").slideDown();
+
+   $(".reset-button"). on ("click", function (){
+   $(".reset-button").remove();
+   $(".start-button").slideDown();
+   
+});
+};
