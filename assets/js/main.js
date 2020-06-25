@@ -74,7 +74,7 @@ function timer(){
 
 function playingGame(){
     if(seconds == 0 && clickedSquares.length < 9){
-        $("#game-over").slideDown();
+        gameOver();
     }
   else if(seconds > 0 && clickedSquares.length == 9 && level == 1){
         document.getElementById("number").innerHTML = "2";
@@ -196,3 +196,11 @@ function resetGame (){
       $(".reset-button").remove();
     });
 };
+
+/** gameOver function */
+
+function gameOver(){
+    $("#game-over").slideDown();
+    $("#level").slideUp(); 
+    $("#time").slideUp();
+}
