@@ -106,7 +106,7 @@ function playingGame(){
         level = 4;
 
     }
-   else if(seconds > 0 && clickedSquares.length == 20 && level == 4){
+   else if(seconds > 0 && clickedSquares.length == 15 && level == 4){
         document.getElementById("number").innerHTML = "5";
          $(".grid-column").css("margin","60px");
          $("#level4").delay(1500).addClass("hide");
@@ -118,7 +118,7 @@ function playingGame(){
 
 
     } 
-     else if(seconds > 0 && clickedSquares.length == 15 && level == 5){
+     else if(seconds > 0 && clickedSquares.length == 20 && level == 5){
         document.getElementById("number").innerHTML = "6"; 
         $(".grid-column").css("margin","25px");
         $("#level5").delay(1500).addClass("hide");
