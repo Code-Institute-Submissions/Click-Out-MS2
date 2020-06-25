@@ -19,6 +19,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: bolder;
     display: none;
+    color:#f8f9faed;
 }
 
 
@@ -84,6 +85,7 @@ margin: 20px;
     position: absolute;
     display: none;
     left:1rem;
+    color:#f8f9faed;
 }
 
 #time{ 
@@ -92,6 +94,7 @@ margin: 20px;
     font-weight: 500;
     display: none;
     right: 2rem;
+   color :#f8f9faed;
 }
 
 /*--instruction box--*/
