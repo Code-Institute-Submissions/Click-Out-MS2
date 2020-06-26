@@ -81,7 +81,7 @@ function playingGame(){
         timer();
         document.getElementById("number").innerHTML = "2";
         $("#level1").addClass("hide-grid").delay(1500);
-        $("#level2").css("display","inline-block").delay(1500).slideDown();  
+        $("#level2").delay(1500).removeClass("hide-grid").slideDown();  
         seconds = 20;
         clickedSquares = [];
         level = 2;
@@ -91,8 +91,8 @@ function playingGame(){
         timer();
         document.getElementById("number").innerHTML = "3";
         $(".grid-column").css("margin","10px");
-        $("#level2").addClass("hide-grid").delay(1500);
-        $("#level3").removeClass("hide-grid").delay(2000).slideDown(); 
+        $("#level2").delay(1500).addClass("hide-grid");
+        $("#level3").delay(2000).removeClass("hide-grid").slideDown(); 
         seconds = 20;
         clickedSquares.length = 0;
         level = 3;
@@ -102,8 +102,8 @@ function playingGame(){
         document.getElementById("number").innerHTML = "4";
         timer(); 
         $(".grid-column").css("margin","10px");
-        $("#level3").addClass("hide-grid").delay(1500);
-        $("#level4").removeClass("hide-grid").delay(2000).slideDown(); 
+        $("#level3").delay(1500).addClass("hide-grid");
+        $("#level4").delay(2000).removeClass("hide-grid").slideDown(); 
         
         seconds = 20;
         clickedSquares = [];
@@ -114,8 +114,8 @@ function playingGame(){
         document.getElementById("number").innerHTML = "5";
         timer(); 
         $(".grid-column").css("margin","60px");
-        $("#level4").addClass("hide-grid").delay(1500);
-        $("#level5").removeClass("hide-grid").delay(2000).slideDown(); 
+        $("#level4").delay(1500).addClass("hide-grid");
+        $("#level5").delay(2000).removeClass("hide-grid").slideDown(); 
          
         seconds = 20;
         clickedSquares = [];
@@ -127,8 +127,8 @@ function playingGame(){
         document.getElementById("number").innerHTML = "6"; 
         timer();
         $(".grid-column").css("margin","25px");
-        $("#level5").addClass("hide-grid").delay(1500);
-        $("#level6").removeClass("hide-grid").delay(2000).slideDown();
+        $("#level5").delay(1500).addClass("hide-grid");
+        $("#level6").delay(2000).removeClass("hide-grid").slideDown();
         
         seconds = 20;
         clickedSquares = [];
@@ -138,8 +138,8 @@ function playingGame(){
 else if(seconds > 0 && clickedSquares.length == 21 && level == 6){
         document.getElementById("number").innerHTML = "7"; 
         $(".grid-column").css("margin","25px");
-        $("#level6").addClass("hide-grid").delay(1500);
-        $("#level7").removeClass("hide-grid").delay(2000).slideDown();
+        $("#level6").delay(1500).addClass("hide-grid");
+        $("#level7").delay(2000).removeClass("hide-grid").slideDown();
         timer();
         seconds = 20;
         clickedSquares = [];
@@ -148,8 +148,8 @@ else if(seconds > 0 && clickedSquares.length == 21 && level == 6){
     else if(seconds > 0 && clickedSquares.length == 25 && level == 7){
         document.getElementById("number").innerHTML = "8"; 
         $(".grid-column").css("margin","25px");
-        $("#level7").addClass("hide-grid").delay(1500);
-        $("#level8").removeClass("hide-grid").delay(2000).slideDown();
+        $("#level7").delay(1500).addClass("hide-grid");
+        $("#level8").delay(2000).removeClass("hide-grid").slideDown();
         timer();
         seconds = 20;
         clickedSquares = [];
@@ -158,8 +158,8 @@ else if(seconds > 0 && clickedSquares.length == 21 && level == 6){
     else if(seconds > 0 && clickedSquares.length == 30 && level == 8){
         document.getElementById("number").innerHTML = "9"; 
         $(".grid-column").css("margin","25px");
-        $("#level8").addClass("hide-grid").delay(1500);
-        $("#level9").removeClass("hide-grid").delay(2000).slideDown();
+        $("#level8").delay(1500).addClass("hide-grid");
+        $("#level9").delay(2000).removeClass("hide-grid").slideDown();
         timer();
         seconds = 20;
         clickedSquares = [];
@@ -168,8 +168,8 @@ else if(seconds > 0 && clickedSquares.length == 21 && level == 6){
     else if(seconds > 0 && clickedSquares.length == 28 && level == 9){
         document.getElementById("number").innerHTML = "10"; 
         $(".grid-column").css("margin","25px");
-        $("#level9").addClass("hide-grid").delay(1500);
-        $("#level10").removeClass("hide-grid").delay(2000).slideDown();
+        $("#level9").delay(1500).addClass("hide-grid");
+        $("#level10").delay(2000).removeClass("hide-grid").slideDown();
         timer();
         seconds = 20;
         clickedSquares = [];
@@ -183,13 +183,12 @@ else if(seconds > 0 && clickedSquares.length == 21 && level == 6){
 }
   
 /** function to removes each square when clicked**/
-function click (){
     $ (".grid-column").on("click", function(){ 
      console.log(clickedSquares);
      clickedSquares.push($(this));
      $(this).remove();
    });
-}
+
 
 /**resetGame function*/
 
@@ -204,6 +203,7 @@ function resetGame (){
        $("#time").slideUp();
        $(".reset-button").remove();
        $("#game-win").remove();
+       location.reload();
       
     });
 };
@@ -216,3 +216,8 @@ function gameOver(){
     $("#time").slideUp();
 }
 
+/** window reload function  */
+
+function pageReload(){
+    location.reload();
+}
