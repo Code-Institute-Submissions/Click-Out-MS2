@@ -68,6 +68,7 @@ function timer(){
             }
             playingGame();
         }, 1000);
+     click();
     }
 }
 
@@ -199,12 +200,13 @@ else if(seconds > 0 && clickedSquares.length == 21 && level == 6){
 }
   
 /** function to removes each square when clicked**/
-    $ (".grid-column").on("click", function(){ 
-     console.log(clickedSquares);
-     clickedSquares.push($(this));
-     $(this).remove();
-   });
-
+   function click () {
+        $ (".grid-column").on("click", function(){ 
+          console.log(clickedSquares);
+          clickedSquares.push($(this));
+          $(this).remove();
+        });
+    }
 
 /**resetGame function*/
 
