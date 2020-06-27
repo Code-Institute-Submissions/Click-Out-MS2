@@ -221,9 +221,10 @@ function resetGame (){
        $("#time").slideUp();
        $(".reset-button").remove();
        $("#game-win").remove();
-       location.reload();
-      
+       
+       pageReload();
     });
+ 
 };
 
 /** gameOver function */
@@ -237,5 +238,6 @@ function gameOver(){
 /** window reload function  */
 
 function pageReload(){
-    location.reload();
+    setTimeout(function(){ location.reload();  }, 2000)
 }
+
