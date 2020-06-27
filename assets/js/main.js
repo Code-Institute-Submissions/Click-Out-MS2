@@ -44,7 +44,6 @@ $ (document).ready(function () {
 */
  $(".start-button").on("click", function (){
 
-    // $(".start-button").remove();
     $(".start-button").hide();
 
     document.getElementById("number").innerHTML = "1";
@@ -77,6 +76,7 @@ function timer(){
 function playingGame(){
     if(seconds == 0 && clickedSquares.length < 9){
         gameOver();
+        resetGame();
     }
   else if(seconds > 0 && clickedSquares.length == 9 && level == 1){
         timer();
@@ -235,9 +235,13 @@ function gameOver(){
     $("#time").slideUp();
 }
 
-/** window reload function  */
+/** PageReload function  */
 
-function pageReload(){
-    setTimeout(function(){ location.reload();  }, 2000)
+function pageReload(){ 
+    $(".start-button").on("click", function (){
+     
+    $(".start-button").hide();
+    location.reload();
+}); 
 }
 
