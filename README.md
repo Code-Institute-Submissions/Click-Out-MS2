@@ -6,13 +6,20 @@
 # Click Out!     
 </div>
 
-# UX
-## Project Goals
-The goal is to create a fun and simple interactive game that can keep users entertained. The game will have different levels and increased difficulty per level. The design is very simple and clean with minimal colours.
+## UX
+### Project Goals
+The goal is to create a fun and simple interactive game that can keep users of all aged entertained. The game will have different levels and increased difficulty per level. The design is very simple and clean with minimal colours.
 
-## Development Goal
+### User stories
 
+What requirement i want met as a user:
 
-
+* clear instruction of the game before game starts
+* clicking each square to remove them should be easy.
+* A clear view of the timer, so i know how much time i have left.
+* A clear view of the level  to track progress 
+* A progession of game difficulty
+* An unerstanding on how to Restart the game, if i want to try gain.
+* I want a clear layout of the game e.g, colours must be easy on the eye and cohesive.
  
 
