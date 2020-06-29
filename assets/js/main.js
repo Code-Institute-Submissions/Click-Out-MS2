@@ -73,7 +73,7 @@ function timer(){
  /** playingGame function*/
 
 function playingGame(){
-    if(seconds == 0 && clickedSquares.length < 9){
+    if(seconds == 0 && clickedSquares.length < 9 ){
         gameOver();
         resetGame();
     }
@@ -214,7 +214,6 @@ function resetGame (){
 
    $(".reset-button").on("click", function (){
        console.log("ENTERING THE CLICK FUNCTION");
-       $(".start-button").slideDown();
        console.log("START BUTTON SHOULD HAVE APPEARED");
        $("#level").slideUp(); 
        $("#time").slideUp();
@@ -237,10 +236,7 @@ function gameOver(){
 /** PageReload function  */
 
 function pageReload(){ 
-    $(".start-button").on("click", function (){
-     
-    $(".start-button").hide();
     location.reload();
-}); 
-}
+};
+
 
