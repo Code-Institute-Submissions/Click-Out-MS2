@@ -19,7 +19,14 @@ What requirement i want met as a user:
 * A clear view of the timer, so i know how much time i have left.
 * A clear view of the level  to track progress 
 * A progession of game difficulty
-* An unerstanding on how to Restart the game, if i want to try gain.
+* how to restart the if want to do so. 
 * I want a clear layout of the game e.g, colours must be easy on the eye and cohesive.
  
+## Wireframes
+
+
+## Features 
+
+
+
 

@@ -46,8 +46,8 @@ $ (document).ready(function () {
 
     $(".start-button").hide();
 
-    document.getElementById("number").innerHTML = "1";
     
+    setTimeout(function(){ document.getElementById("number").innerHTML = "1"; }, 1000)
     timer();
 
 }); 
