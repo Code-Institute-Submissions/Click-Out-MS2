@@ -46,7 +46,6 @@ $ (document).ready(function () {
 
     $(".start-button").hide();
 
-    
     setTimeout(function(){ document.getElementById("number").innerHTML = "1"; }, 1000)
     timer();
 
@@ -66,7 +65,7 @@ function timer(){
                 clearInterval(countDown);
             }
             playingGame();
-        }, 1000);
+        }, 500);
      click();
     }
 }
