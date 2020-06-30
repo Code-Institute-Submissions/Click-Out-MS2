@@ -49,14 +49,15 @@ $ (document).ready(function () {
 * start timer for the first level of game*
 
 */
- $(".start-button").on("click", function (){
+    $(".start-button").on("click", function (){
 
     $(".start-button").hide();
 
     setTimeout(function(){ document.getElementById("number").innerHTML = "1"; }, 1000)
     timer();
 
-}); 
+    }); 
+
 
 let seconds = 21;
 
@@ -188,8 +189,8 @@ function resetGame (){
        $("#time").slideUp();
        $(".reset-button").remove();
        $("#game-win").remove();
-       
-       pageReload();
+       $(".start-button").slideDown();
+      // pageReload();
     });
  
 };
