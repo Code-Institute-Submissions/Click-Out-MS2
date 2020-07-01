@@ -19,6 +19,7 @@ const messageBoard = document.getElementsByClassName("message")
 let level = 1;
 let seconds = 21;
 let levels = document.getElementById("number");
+let squaresPerLevel = [0,9,12,16,15,20,21,25,30,28,35]
 
 
     
@@ -87,9 +88,11 @@ function timer(){
 }
 
  /** playingGame function*/
-
+let squareNumber;
 function playingGame(){
-    if(seconds == 0 && clickedSquares.length < 9 ){
+     squareNumber = squaresPerLevel[level];
+
+    if(seconds == 0 && clickedSquares.length < squareNumber ){
         gameOver();
     }
   else if(seconds > 0 && clickedSquares.length == 9 && level == 1){
