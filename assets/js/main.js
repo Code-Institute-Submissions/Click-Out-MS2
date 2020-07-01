@@ -17,7 +17,8 @@ let clickNumber;
 const grid = document.getElementsByClassName("grid-column")
 const messageBoard = document.getElementsByClassName("message")
 let level = 1;
-let levels = document.getElementById("number")
+let seconds = 21;
+let levels = document.getElementById("number");
 
 
     
@@ -33,13 +34,14 @@ $ (document).ready(function () {
     $("#level").delay(3850).slideDown(); 
     $("#time").delay(3850).slideDown();
 
-}); 
+});
+
 /* next level function */
  function go_to_level(previousLevel, level){
 	document.getElementById("number").innerHTML = level;
     document.getElementById("seconds").innerHTML= "20";
-    $("#level"+ previousLevel).addClass("hide-grid").delay(1500);
-    $("#level"+level).delay(1500).removeClass("hide-grid").slideDown();  
+    $("#level"+ previousLevel).css("display","none").delay(1500);
+    $("#level"+level).delay(1500).css("display","inline-block").slideDown();  
 };
 
 /*
@@ -49,17 +51,23 @@ $ (document).ready(function () {
 * start timer for the first level of game*
 
 */
-    $(".start-button").on("click", function (){
+  
+      $(".start-button").on("click", function (){
 
-    $(".start-button").hide();
+       $(".start-button").hide();
+       timer();
+       firstLevel();
 
-    setTimeout(function(){ document.getElementById("number").innerHTML = "1"; }, 1000)
-    timer();
-
-    }); 
+    });
 
 
-let seconds = 21;
+
+/**fristLevel function */
+ function firstLevel(){
+ $("#level1").css("display","inline-block").slideDown();    
+ setTimeout(function(){ document.getElementById("number").innerHTML = "1"; }, 1000)
+
+ }
 
 
 /** function to removes each square when clicked**/
@@ -83,7 +91,6 @@ function timer(){
 function playingGame(){
     if(seconds == 0 && clickedSquares.length < 9 ){
         gameOver();
-        resetGame();
     }
   else if(seconds > 0 && clickedSquares.length == 9 && level == 1){
         timer();
@@ -179,17 +186,16 @@ else if(seconds > 0 && clickedSquares.length == 21 && level == 6){
 
 /**resetGame function*/
 
-function resetGame (){
+function resetGame(){
     $(".reset-button").slideDown();
 
    $(".reset-button").on("click", function (){
-       console.log("ENTERING THE CLICK FUNCTION");
-       console.log("START BUTTON SHOULD HAVE APPEARED");
        $("#level").slideUp(); 
        $("#time").slideUp();
        $(".reset-button").remove();
        $("#game-win").remove();
        $(".start-button").slideDown();
+        $("#game-over").slideUp();
       // pageReload();
     });
  
@@ -201,12 +207,13 @@ function gameOver(){
     $("#game-over").slideDown();
     $("#level").slideUp(); 
     $("#time").slideUp();
+    resetGame();
 }
 
 /** PageReload function  */
 
-function pageReload(){ 
-    location.reload();
-};
+//function pageReload(){ 
+ //   location.reload();
+//};
 
 
