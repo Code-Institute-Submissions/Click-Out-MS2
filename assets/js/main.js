@@ -20,6 +20,7 @@ let level = 1;
 let seconds = 21;
 let levels = document.getElementById("number");
 let squaresPerLevel = [0,9,12,16,15,20,21,25,30,28,35]
+let squareNumber;
 
 
     
@@ -31,7 +32,6 @@ $ (document).ready(function () {
     $("#game-title").delay(1500).slideDown();
     $(".instruction-container").delay(2000).slideDown();
     $(".start-button").delay(3000).slideDown();
-    $(".instruction-container").delay(1000).slideUp();
     $("#level").delay(3850).slideDown(); 
     $("#time").delay(3850).slideDown();
 
@@ -53,9 +53,10 @@ $ (document).ready(function () {
 
 */
   
-      $(".start-button").on("click", function (){
+       $(".start-button").on("click", function (){
 
        $(".start-button").hide();
+       $(".instruction-container").slideUp();
        timer();
        firstLevel();
 
@@ -66,7 +67,7 @@ $ (document).ready(function () {
 /**fristLevel function */
  function firstLevel(){
  $("#level1").css("display","inline-block").slideDown();    
- setTimeout(function(){ document.getElementById("number").innerHTML = "1"; }, 1000)
+ document.getElementById("number").innerHTML = "1";
 
  }
 
@@ -88,7 +89,6 @@ function timer(){
 }
 
  /** playingGame function*/
-let squareNumber;
 function playingGame(){
      squareNumber = squaresPerLevel[level];
 
