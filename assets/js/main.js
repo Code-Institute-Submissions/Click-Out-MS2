@@ -1,19 +1,12 @@
     
 // DOM Variables 
 
-const resetButton  = document.getElementsByClassName("reset-button");
-
-
 
 //variables 
 let squares;
 let startButton = document.getElementsByClassName("start-button");
-let getLevels = ""
 let clickedSquares = [];
-let winMessage;
-let loseMessage;
 let instructionBox = document.getElementsByClassName("instruction-container");
-let clickNumber;
 const grid = document.getElementsByClassName("grid-column")
 const messageBoard = document.getElementsByClassName("message")
 let level = 1;
@@ -41,8 +34,8 @@ $ (document).ready(function () {
  function go_to_level(previousLevel, level){
 	document.getElementById("number").innerHTML = level;
     document.getElementById("seconds").innerHTML= "20";
-    $("#level"+ previousLevel).css("display","none").delay(1500);
-    $("#level"+level).delay(1500).css("display","inline-block").slideDown();  
+    $("#level"+ previousLevel).addClass("hide-grid").delay(1500);
+    $("#level"+level).delay(1500).removeClass("hide-grid").slideDown();  
 };
 
 /*
@@ -54,11 +47,12 @@ $ (document).ready(function () {
 */
   
        $(".start-button").on("click", function (){
-
+       console.log("on click function start btton clicked")
        $(".start-button").hide();
        $(".instruction-container").slideUp();
        timer();
        firstLevel();
+       console.log("start-button")
 
     });
 
@@ -68,6 +62,7 @@ $ (document).ready(function () {
  function firstLevel(){
  $("#level1").css("display","inline-block").slideDown();    
  document.getElementById("number").innerHTML = "1";
+ console.log("FIRST LEVEL")
 
  }
 
@@ -187,30 +182,34 @@ else if(seconds > 0 && clickedSquares.length == 21 && level == 6){
         });
     }
 
+
+    /** get reset button */
+     function resetButton(){
+         $(".reset-button").slideDown();
+     }
 /**resetGame function*/
 
 function resetGame(){
-    $(".reset-button").slideDown();
-
+    
    $(".reset-button").on("click", function (){
-       $("#level").slideUp(); 
-       $("#time").slideUp();
-       $(".reset-button").remove();
+       console.log("CLICKED RESET BUTTON")
+       $(this).remove();
        $("#game-win").remove();
        $(".start-button").slideDown();
+       console.log("WHAT HAPPENS TO START BUTTON")
         $("#game-over").slideUp();
+        //debugger;
       // pageReload();
     });
- 
+ resetButton();
 };
 
 /** gameOver function */
 
 function gameOver(){
     $("#game-over").slideDown();
-    $("#level").slideUp(); 
-    $("#time").slideUp();
-    resetGame();
+     resetGame();
+     console.log("GAMEOVER")
 }
 
 /** PageReload function  */
