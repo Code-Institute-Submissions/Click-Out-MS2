@@ -202,8 +202,6 @@ function startAgain(){
 
      
 /**resetGame function*/
-
-function resetGame(){
     
    $(".reset-button").on("click", function (){
        console.log("CLICKED RESET BUTTON")
@@ -218,9 +216,10 @@ function resetGame(){
         //debugger;
       // pageReload();
       startAgain();
+      resetButton();
     });
- resetButton();
-};
+ 
+
 /** gameOver function */
 
 function gameOver(){
