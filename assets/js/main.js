@@ -35,7 +35,8 @@ $ (document).ready(function () {
 	document.getElementById("number").innerHTML = level;
     document.getElementById("seconds").innerHTML= "20";
     $("#level"+ previousLevel).addClass("hide-grid").delay(1500);
-    $("#level"+level).delay(1500).removeClass("hide-grid").slideDown();  
+    $("#level"+level).delay(1500).removeClass("hide-grid").slideDown(); 
+    console.log("playing Game");
 };
 
 /*
@@ -184,10 +185,22 @@ else if(seconds > 0 && clickedSquares.length == 21 && level == 6){
     }
 
 
-    /** get reset button */
+/** get reset button */
      function resetButton(){
          $(".reset-button").slideDown();
      }
+
+/**game start again function */
+function startAgain(){
+    timer();
+    firstLevel()
+    click();
+    console.log("start game again")
+
+}
+
+
+     
 /**resetGame function*/
 
 function resetGame(){
@@ -208,15 +221,6 @@ function resetGame(){
     });
  resetButton();
 };
-
-/**game start again function */
-function startAgain(){
-    timer();
-    firstLevel()
-    click();
-    console.log("start game again")
-
-}
 /** gameOver function */
 
 function gameOver(){
