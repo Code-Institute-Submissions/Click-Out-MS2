@@ -48,7 +48,7 @@ $ (document).ready(function () {
   
        $(".start-button").on("click", function (){
        console.log("on click function start btton clicked")
-       $(".start-button").hide();
+       $(this).hide();
        $(".instruction-container").slideUp();
        timer();
        firstLevel();
@@ -71,6 +71,7 @@ $ (document).ready(function () {
 
 function timer(){
     if(seconds == 21 && clickedSquares.length == 0){
+        console.log("TIMER")
         let countDown = setInterval(function(){
             seconds = seconds - 1;
             document.getElementById("seconds").innerHTML= seconds;
@@ -80,7 +81,7 @@ function timer(){
             playingGame();
         }, 500);
      click();
-    }
+    } 
 }
 
  /** playingGame function*/
@@ -195,15 +196,27 @@ function resetGame(){
        console.log("CLICKED RESET BUTTON")
        $(this).remove();
        $("#game-win").remove();
-       $(".start-button").slideDown();
+       //$(".start-button").slideDown();
        console.log("WHAT HAPPENS TO START BUTTON")
         $("#game-over").slideUp();
+        //go_to_level(0,1)
+        //timer();
+    
         //debugger;
       // pageReload();
+      startAgain();
     });
  resetButton();
 };
 
+/**game start again function */
+function startAgain(){
+    timer();
+    firstLevel()
+    click();
+    console.log("start game again")
+
+}
 /** gameOver function */
 
 function gameOver(){
