@@ -204,8 +204,8 @@ function startAgain(){
     
    $(".reset-button").on("click", function (){
        console.log("CLICKED RESET BUTTON")
-       $(this).remove();
-       $("#game-win").remove();
+       $(this).addClass("hide");
+       $("#game-win").addClass("hide");
        //$(".start-button").slideDown();
        console.log("WHAT HAPPENS TO START BUTTON")
         $("#game-over").slideUp();
@@ -215,7 +215,6 @@ function startAgain(){
         //debugger;
       // pageReload();
       startAgain();
-      resetButton();
     });
  
 
