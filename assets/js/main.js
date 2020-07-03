@@ -171,7 +171,6 @@ else if(seconds > 0 && clickedSquares.length == 21 && level == 6){
     }
     else if(seconds > 0 && clickedSquares.length == 35 && level == 10){
         $("#game-win").slideDown();
-        resetGame();
     }
 }
 
@@ -224,7 +223,6 @@ function startAgain(){
 
 function gameOver(){
     $("#game-over").slideDown();
-     resetGame();
      console.log("GAMEOVER")
 }
 
