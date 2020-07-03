@@ -224,6 +224,7 @@ function startAgain(){
 function gameOver(){
     $("#game-over").slideDown();
      console.log("GAMEOVER")
+     resetButton();
 }
 
 /** PageReload function  */
