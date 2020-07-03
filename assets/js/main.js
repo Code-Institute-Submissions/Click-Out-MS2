@@ -206,10 +206,10 @@ function startAgain(){
        console.log("CLICKED RESET BUTTON")
        $(this).addClass("hide");
        $("#game-win").addClass("hide");
-       //$(".start-button").slideDown();
+       $(".start-button").slideDown();
        console.log("WHAT HAPPENS TO START BUTTON")
         $("#game-over").slideUp();
-        //go_to_level(0,1)
+        go_to_level(level,1)
         //timer();
     
         //debugger;
