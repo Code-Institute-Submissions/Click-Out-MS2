@@ -31,11 +31,13 @@ $ (document).ready(function () {
 });
 
 /* next level function */
+let gridColumn = document.getElementsByClassName("grid-column")
  function go_to_level(previousLevel, level){
 	document.getElementById("number").innerHTML = level;
     document.getElementById("seconds").innerHTML= "20";
-    $("#level"+ previousLevel).addClass("hide-grid").delay(1500);
-    $("#level"+level).delay(1500).removeClass("hide-grid").slideDown(); 
+    $("#level,"+ previousLevel).addClass("hide").delay(1500);
+    $("#level,"+level).delay(1500).removeClass("hide").slideDown();
+   
     console.log("playing Game");
 };
 
@@ -61,7 +63,7 @@ $ (document).ready(function () {
 
 /**fristLevel function */
  function firstLevel(){
- $("#level1").css("display","inline-block").slideDown();    
+ $("#level1 , .grid-column").removeClass("hide").slideDown();    
  document.getElementById("number").innerHTML = "1";
  console.log("FIRST LEVEL")
 
@@ -179,7 +181,7 @@ else if(seconds > 0 && clickedSquares.length == 21 && level == 6){
         $ (".grid-column").on("click", function(){ 
           console.log(clickedSquares);
           clickedSquares.push($(this));
-          $(this).remove();
+          $(this).addClass("hide");
         });
     }
 
