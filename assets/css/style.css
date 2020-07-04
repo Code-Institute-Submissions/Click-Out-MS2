@@ -54,8 +54,9 @@ h1{
     background-color: #f8f9faed;
     border: 4px solid #634d7763;
     
-} 
-.hide-grid{
+}
+
+/*.hide{
     display: none;
 }
 /*--buttons/level/time --*/

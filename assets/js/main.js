@@ -64,7 +64,7 @@ const gridColumn = document.querySelectorAll(".grid-column")
 
 /**fristLevel function */
  function firstLevel(){
- $("#level1").removeClass("hide").slideDown();s   
+ $("#level1").removeClass("hide").slideDown();  
  document.getElementById("number").innerHTML = "1";
  console.log("FIRST LEVEL")
 
