@@ -119,7 +119,7 @@ function playingGame(){
     }
    else if(seconds > 0 && clickedSquares.length == 16 && level == 3){
         timer(); 
-       // $(".grid-column").css("margin","10px");
+        $(".grid-column").css("margin","10px");
         go_to_level(3,4);
         seconds = 20;
         clickedSquares = [];
@@ -128,7 +128,7 @@ function playingGame(){
     }
    else if(seconds > 0 && clickedSquares.length == 15 && level == 4){
         timer(); 
-        $(".grid-column").css("margin","60px");
+        $(".grid-column").css("margin","40px");
         go_to_level(4,5);
         seconds = 20;
         clickedSquares = [];
