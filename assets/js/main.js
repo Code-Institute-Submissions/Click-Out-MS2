@@ -14,6 +14,7 @@ let seconds = 21;
 let levels = document.getElementById("number");
 let squaresPerLevel = [0,9,12,16,15,20,21,25,30,28,35]
 let squareNumber;
+let timePerSeconds =[21,20,19,18,17,16,15,14,13,12,10,9,8,7,6,5,4,3,2,1,0]
 
 
     
@@ -72,9 +73,11 @@ const gridColumn = document.querySelectorAll(".grid-column")
 
 
 /** function to removes each square when clicked**/
-
+let timerSeconds;
 function timer(){
-    if(seconds == 21 && clickedSquares.length == 0 ){
+    timerSeconds = timePerSeconds[seconds];
+    if(seconds == 21 && clickedSquares.length == 0 ||clickedSquares == [] )
+    {
         console.log("TIMER")
         let countDown = setInterval(function(){
             seconds = seconds - 1;
@@ -185,15 +188,7 @@ else if(seconds > 0 && clickedSquares.length == 21 && level == 6){
         $ (".grid-column").on("click", function(){ 
           console.log(clickedSquares);
           clickedSquares.push($(this));
-          $(this).hide();
-        });
-    }
-
-     function unclick () {
-        $ (".grid-column").on("click", function(){ 
-          console.log(clickedSquares);
-          clickedSquares.push($(this));
-          $(this).show();
+           $(this).hide();
         });
     }
 
@@ -205,8 +200,8 @@ else if(seconds > 0 && clickedSquares.length == 21 && level == 6){
 /**game start again function */
 function startAgain(){
     firstLevel()
+    $(".grid-column").show();
     console.log("start game again")
-    unclick();
 
 }
 
@@ -216,18 +211,15 @@ function startAgain(){
     
    $(".reset-button").on("click", function (){
        console.log("CLICKED RESET BUTTON")
-       $(this).addClass("hide");
+       $(this).css("display","none");
        $("#game-win").addClass("hide");
        $(".start-button").slideDown();
        console.log("WHAT HAPPENS TO START BUTTON")
         $("#game-over").slideUp();
         go_to_level(level,1)
-        //timer();
-     unclick();
-     click();
         //debugger;
       // pageReload();
-      //startAgain();
+      startAgain();
     });
  
 
