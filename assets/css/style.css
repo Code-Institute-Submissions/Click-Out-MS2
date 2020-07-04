@@ -69,7 +69,9 @@ margin: 20px;
 top:5rem;
 }
 
-
+.start, .reset {
+    text-align: center;
+}
 .level-time-container {
     position: relative;
     text-align: center;
@@ -155,6 +157,11 @@ top:5rem;
    
     
     }
+.start-button, .reset-button{
+ 
+top:8rem;
+}
+
 
     #level{
     font-size: 3rem;
@@ -188,6 +195,10 @@ top:5rem;
 #time{ 
     font-size: 3rem; 
 
+}
+.start-button, .reset-button{
+ 
+top:8rem;
 }
 
 }

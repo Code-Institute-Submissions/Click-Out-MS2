@@ -26,9 +26,6 @@ $ (document).ready(function () {
     $("#game-title").delay(1500).slideDown();
     $(".instruction-container").delay(2000).slideDown();
     $(".start-button").delay(3000).slideDown();
-    $("#level").delay(3850).slideDown(); 
-    $("#time").delay(3850).slideDown();
-
 });
 
 /* next level function */
@@ -55,6 +52,8 @@ const gridColumn = document.querySelectorAll(".grid-column")
        console.log("on click function start btton clicked")
        $(this).hide();
        $(".instruction-container").slideUp();
+       $("#level").slideDown();
+       $("#time").slideDown();  
        timer();
        firstLevel();
        console.log("start-button")
@@ -199,7 +198,6 @@ else if(seconds > 0 && clickedSquares.length == 21 && level == 6){
 
 /**game start again function */
 function startAgain(){
-    firstLevel()
     $(".grid-column").show();
     console.log("start game again")
 
