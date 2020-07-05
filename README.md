@@ -51,4 +51,22 @@ What requirement i want met as a user:
 * With increased levels i also want increase the seconds on the timer, so it's not too difficult and there's a balance.
 * change the layout of the grid for example created a pattern with the squares, so that the game remains interesting and remains stimulating.
 
+## Design 
+
+### 1. font 
+Using google FontAwosome i used the Roboto, just keeping it simple as the gameis not really focused on writing i kept the choice simple. 
+ 
+### 2. Colours
+   Game colours - As it's a simple game, i chose to keep the colour scheme very simple, by only using 3 colours max. 
+   When i was doing some research on the game i wanted to create, i kept seeing a theme of a very dark background, i also read somewhere that it's easier on the eye. 
+   So i decided to take that route. I got the idea of a white grid from the game logo which is actually a favicon, i liked how it looked a decided i wanted to match it.
+   intially the background was dark purple but i went a bit darker as i went to ont create the game as it was a better fit and the white from the grid popped put more. The colour of the font was black until i changed the background,
+   the background colour was the most important to be because it acted as a base for my colour scheme. 
+
+### 3. logo 
+The logo is a square grid, matching the sentiments on the game. As it's basically a grid game, i wanted to that to resonate in the logo,
+and keep it simply by making them the same colour, i wanted everything to link together, and makig th whole game cohesive.
+
+### 4 Game grid
+Similar to the logo grid, same the colour, just to make the game design come together. Although the grid changes in size as the continue to up a level, the theme remains. 
 
