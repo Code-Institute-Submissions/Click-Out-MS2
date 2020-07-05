@@ -70,3 +70,23 @@ and keep it simply by making them the same colour, i wanted everything to link t
 ### 4 Game grid
 Similar to the logo grid, same the colour, just to make the game design come together. Although the grid changes in size as the continue to up a level, the theme remains. 
 
+## Final and official testing
+  * [W3 MarkUp validation](https://validator.w3.org)
+  * [W3 CSS validation](https://jigsaw.w3.org/css-validator/)
+
+## Testing 
+
+I  had trouble understanding javascript, at the beginnig, so i could't really understand the jasmine testing framework. instead I decided to do all the testing via browser  Google chrome Dev tools  and javascript debugger.
+In future when i have a better understanding of javascript i plan to use jasmine testing Frameworks.
+
+### General Testing
+ I relied mostly on previewing my code via browser and chrome Dev tools. Everytime i would write a code, css, html or javascripts i would preview it in chrome Dev tools to see it's working 
+ and try to fix it if it wasn't.
+ Sometimes i'd also type my code into chrome dev tools first then copy it into my gitpod, i did this mostly for my HTML and CSS. This allowed me to make my game layout repsonsive on most devices and made sure that it looked the same or simialr on all devices.
+ I then pushed this to my github is i was happy with the changes.
+ i'd also sent the deployed website to myself and a few friends to check the repsonsiveness and the functionality of the game.
+
+### Testing javascripts
+  when testing my javascript codes i also used chrome dev tools. I also used Jshint, to help me detect some erros and potential problems on my code.
+  I also used javascript debugger linked to Chrome Dev Tools, which also allowed me to pin point a specific issues, whilst using chrome tools to watch certan functions that i thought had issues.
+  Also used console.log () to see if certain functions were being called and where they were being called, when issues with my javascript codes occured.
