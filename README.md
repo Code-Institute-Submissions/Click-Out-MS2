@@ -128,3 +128,28 @@ This was solved by removing the click function that the on click  grid column fu
 
 * When the game restarted, if you failed a level with a bigger grid-columns margins, when the game restarted again the, the margin would not reset
   it would be applied to all the other levels. This was solved by using jquery and restting the margin to 0 in the start game function.
+
+
+## Deployment
+
+To deploy this page to GitHub Pages from its GitHub repository, the following steps were taken:
+
+1. From the menu items near the top of the page, select Settings.
+2. Scroll down to the GitHub Pages section.
+3. Under Source click the drop-down menu labelled None and select Master Branch
+4. On selecting Master Branch the page is automatically refreshed, the website is now deployed.
+5. Scroll back down to the GitHub Pages section to retrieve the link to the deployed website.
+
+### How to run this project locally
+
+To clone this project from GitHub:
+
+Under the repository name, click "Clone or download".
+In the Clone with HTTPs section, copy the clone URL for the repository.
+In your local IDE open Git Bash.
+Change the current working directory to the location where you want the cloned directory to be made.
+Type git clone, and then paste the URL you copied in Step 3.
+git clone https://github.com/Tabita99/Au-Naturale.git
+Press Enter. Your local clone will be created.
+Further reading and troubleshooting on cloning a repository from GitHub here
+
