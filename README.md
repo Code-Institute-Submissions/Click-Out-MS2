@@ -90,3 +90,41 @@ In future when i have a better understanding of javascript i plan to use jasmine
   when testing my javascript codes i also used chrome dev tools. I also used Jshint, to help me detect some erros and potential problems on my code.
   I also used javascript debugger linked to Chrome Dev Tools, which also allowed me to pin point a specific issues, whilst using chrome tools to watch certan functions that i thought had issues.
   Also used console.log () to see if certain functions were being called and where they were being called, when issues with my javascript codes occured.
+
+##  Issues and Resolutions
+
+* I really struggled at begnning tp understand javascrits, this lead me to change the intially game i wanted to create because i did not thing i had the knowledge i need to create such and game. 
+  The game was still a grid based game but intially, a grid would pop with a pattern and you'd have to copy the pattern. I really struggled with how i was going to create the different patters and to randomise the pattern to appear each time.
+   So i opted out of this idea and adapted it into a my current game. 
+
+* The first issue i had was creating my timer for the game. I created a timer after watching several youtube tutorials, However my timer kept was looping  after counting down to 20 seconds.  
+ I solved this issue after researching, by creating an if statement that sets clear intervals to stop the timer when it had reaches zero.
+
+* I had an issue with with my playingGame function first if statment, the clickeSquares.length was not working. This was because when i pushed the empty array to store the clicked grid-columns 
+  i had already removed the grid columns before pushing so nothing was being pushed. This was resolved by changing the order of the jquery. The clicked grid-columns were push into the empty array before 
+  they were removed.
+
+* Moving to the next level after level 2  when the all the squares were clicked as set by the condition statments.  However i could not make them appear next levels appear after all the squares had been clcked in time . This was becase although the clicked 
+ grid-columns were being pushed to an empty array, they were not being emptied, so they were jjust adding up For example if you needed to click 12 squares to move on to level 3 and you couldn't because all the squares for the previous level were still stored in the array 
+ so the condition could not be met. This was resolved by emptying the array on every level.
+
+ * The game over message would not appear after level 2. if you a level the game over message was suppose to appear on every level.  This did not happen, because the first if statement had only to the first level e.g. if clickeSquares.length < 9. 
+   to fix this i created an array with all the squares from each level and place the level variable inside the array, this allowed the game over message to show on all levels when you failed.
+
+* When the game restarted the grid would not show, this was an ongoing issue. This main issue was because i used jquery remove instead of hide this removed the element from the DOM list.
+  This was resolved by using hide instead of remove, which mean that the grid could reappear.
+
+* start button when game is reset did not show also due to using the remove jquery, resolved by using hide instead.
+
+* When tryning to restart the timer would not restart. This was because the if statment stated the when the clickedSquares length was 0 the timer should start
+ and to restart the game if you failed or won would mean that some of the squares had been clicked, so the timer would not restart. This was resolved by clearing the array and also setting the seconds to 21 
+ in the start game function.
+
+* when the game restarted the  amount of squares pushed into the empty array were being timed by 3 for some reason. This meant that you could not move on the next level once you had restarted the game. 
+This was solved by removing the click function that the on click  grid column function was wrapped in. 
+
+* When the game restarted after removing the clcik function, when you moved on the next level the grid from the previous level was not hidden.
+ This was solved by calling the go-to-level function in the start game function instead of the on click reset button function.
+
+* When the game restarted, if you failed a level with a bigger grid-columns margins, when the game restarted again the, the margin would not reset
+  it would be applied to all the other levels. This was solved by using jquery and restting the margin to 0 in the start game function.
