@@ -71,8 +71,9 @@ and keep it simply by making them the same colour, i wanted everything to link t
 Similar to the logo grid, same the colour, just to make the game design come together. Although the grid changes in size as the continue to up a level, the theme remains. 
 
 ## Final and official testing
-  * [W3 MarkUp validation](https://validator.w3.org)
-  * [W3 CSS validation](https://jigsaw.w3.org/css-validator/)
+* [W3C Markup Validation](https://validator.w3.org/)  HTML validation.
+* [W3C CSS validation](https://jigsaw.w3.org/css-validator/) CSS validation.
+
 
 ## Testing 
 
@@ -129,6 +130,17 @@ This was solved by removing the click function that the on click  grid column fu
 * When the game restarted, if you failed a level with a bigger grid-columns margins, when the game restarted again the, the margin would not reset
   it would be applied to all the other levels. This was solved by using jquery and restting the margin to 0 in the start game function.
 
+## Technologies Used
+
+1. HTML, CSS & javascripts Progamming languages 
+2. [Bootstrap](https://getbootstrap.com/): to make the website responsive on desktop, tablets and mobile devices. 
+3. [jQuery](https://jquery.com/): Used to create effects and functions 
+4. [GitHub](https://github.com/):  Repository host for project and previe live website.
+5. [GIT](https://git-scm.com/): Used for version control 
+6. [Font Awesome](https://fontawesome.com/): Used for grid icon from game logo.
+7. [Google Fonts](https://fonts.google.com/): Used Roboto.
+8. [Unicorn Revealer](https://chrome.google.com/webstore/detail/unicorn-revealer/lmlkphhdlngaicolpmaakfmhplagoaln?hl=en-GB) rectify overflow issues.
+9. [Jshint](https://jshint.com/): used to correct and detect errors in javascripts codes.
 
 ## Deployment
 
@@ -144,12 +156,15 @@ To deploy this page to GitHub Pages from its GitHub repository, the following st
 
 To clone this project from GitHub:
 
-Under the repository name, click "Clone or download".
-In the Clone with HTTPs section, copy the clone URL for the repository.
-In your local IDE open Git Bash.
-Change the current working directory to the location where you want the cloned directory to be made.
-Type git clone, and then paste the URL you copied in Step 3.
+1. Under the repository name, click "Clone or download".
+2. In the Clone with HTTPs section, copy the clone URL for the repository. 
+3. In your local IDE open Git Bash.
+4. Change the current working directory to the location where you want the cloned directory to be made.
+5. Type ```git clone```, and then paste the URL you copied in Step 3.
+```console
 git clone https://github.com/Tabita99/Au-Naturale.git
-Press Enter. Your local clone will be created.
-Further reading and troubleshooting on cloning a repository from GitHub here
+```
+6. Press Enter. Your local clone will be created.
+
+Further reading and troubleshooting on cloning a repository from GitHub [here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository/)
 
