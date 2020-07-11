@@ -183,6 +183,7 @@ function playingGame() {
 /** get reset button */
 function resetButton() {
     $(".reset-button").slideDown();
+
 }
 
 /**game start again function */
@@ -207,6 +208,12 @@ $(".reset-button").on("click", function() {
     $(this).css("display", "none");
     $("#game-win").addClass("hide");
     $(".start-button").slideDown();
+    $(".grid-column").on("click", function() {
+        console.log("clickedSquares from line 186 = " + clickedSquares)
+        clickedSquares.push($(this));
+        $(this).hide();
+    });
+    //canClickSquares();
     console.log("WHAT HAPPENS TO START BUTTON - line 220")
     $("#game-over").slideUp();
 });
@@ -220,16 +227,18 @@ function endGame() {
     console.log("ENDGAME line 229")
     resetButton();
     $(".grid-column").show()
-    NoClickingSquare();
+    $(".grid-column").off('click');
+
+   
 }
 
 /**disable grid -column onclick function */
 
-function NoClickingSquare () {
+/*function NoClickingSquare () {
     $(".grid-column").click(function(){});
     $(".grid-column").off('click');
 
 }
 
 
-
+*/
