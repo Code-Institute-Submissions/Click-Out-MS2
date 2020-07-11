@@ -220,5 +220,16 @@ function endGame() {
     console.log("ENDGAME line 229")
     resetButton();
     $(".grid-column").show()
+    NoClickingSquare();
 }
+
+/**disable grid -column onclick function */
+
+function NoClickingSquare () {
+    $(".grid-column").click(function(){});
+    $(".grid-column").off('click');
+
+}
+
+
 
