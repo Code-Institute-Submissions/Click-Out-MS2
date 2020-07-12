@@ -8,10 +8,12 @@ body {
 
 .instruction-container {
     background-color:#f8f9faed;
+    border-color: #634d7763;
 }
 
 
 /*--logo/title--*/
+
 #game-title {
     text-align: center;
     margin-bottom: 40px;
@@ -40,6 +42,8 @@ h1{
     font-size: 2.5rem;
 }
 
+/*--Grid--*/
+
 .grid-row{
     text-align: center;
 
@@ -56,10 +60,8 @@ h1{
     
 }
 
-/*.hide{
-    display: none;
-}
-/*--buttons/level/time --*/
+/*--Buttons start/reset--*/
+
 .start-button, .reset-button{
  
 position: relative;
@@ -72,6 +74,9 @@ top:5rem;
 .start, .reset {
     text-align: center;
 }
+
+/*--level/Time-*/
+
 .level-time-container {
     position: relative;
     text-align: center;
@@ -107,11 +112,12 @@ top:5rem;
 .instruction-container{
     position: relative;
     border-style: solid;
-    border-color: #634d7763;
     display: none;
     top:10rem;
 }
-/**Game over container**/
+
+/*--instruction box Messages--*/
+
 #game-over, #game-win{
     position: relative;
     border-style: solid;
@@ -126,9 +132,10 @@ top:5rem;
     text-align: center;
     font-family: 'Roboto', sans-serif;
 }
-/*-- css added in js --*/
 
-.hide-grid , .hide  {
+/*-- css to be added in js to hide and make elemennts appear--*/
+
+ .hide  {
     display: none;
 }
 
@@ -140,13 +147,14 @@ top:5rem;
         width: 60px;
         height: 70px;
     }
+
 #logo{
     padding-right: 0;
 }
 
 .instruction-container {
     top: 6rem;
-}
+  }
 }
 
 
@@ -154,28 +162,24 @@ top:5rem;
 .instruction-container{
     width: 70%;
     left: 14%;
-   
-    
-    }
+ }
+
 .start-button, .reset-button{
- 
-top:8rem;
+     top:8rem;
 }
 
-
-    #level{
-    font-size: 3rem;
-  
+#level{
+    font-size: 3rem; 
 }
 
 #time{ 
     font-size: 3rem; 
-   
-
 }
+
 .grid-container {
     margin-top: 135px;
-}
+  }
+
 }
 
 @media only screen  and (min-width : 1224px) {
@@ -183,7 +187,8 @@ top:8rem;
     width: 70%;
     left: 14%;
     }
-    .grid-container{
+
+ .grid-container{
     margin-top:130px;
 }
 
@@ -196,12 +201,12 @@ top:8rem;
     font-size: 3rem; 
 
 }
+
 .start-button, .reset-button{
- 
-top:8rem;
+  top:8rem;
 }
 
-}
+ }
 
 
 
