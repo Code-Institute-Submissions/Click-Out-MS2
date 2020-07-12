@@ -8,7 +8,10 @@ let squareNumber;
 
 
 
-/**landing page**/
+/*
+*Game starting page*
+* slide down effect on Game logo/title, instruction box and start button *  
+*/
 
 $(document).ready(function() {
     $("#logo").slideDown(2000);
@@ -17,26 +20,14 @@ $(document).ready(function() {
     $(".start-button").delay(3000).slideDown();
 });
 
-/* next level function */
-function go_to_level(previousLevel, level) {
-    document.getElementById("number").innerHTML = level;
-    document.getElementById("seconds").innerHTML = "20";
-    $("#level" + previousLevel).addClass("hide");
-    $("#level" + level).removeClass("hide").slideDown();
-    console.log("playing Game");
-}
-
 
 /*
-* Start game on click function*
-*removes the start button*
+*removes the stat button *
 *starts the first level of the game*
 * start timer for the first level of game*
-
 */
 
 $(".start-button").on("click", function() {
-    console.log("on click function start btton clicked")
     $(this).hide();
     $(".instruction-container").slideUp();
     $("#level").slideDown();
@@ -47,21 +38,19 @@ $(".start-button").on("click", function() {
 
 });
 
+/*
+* removes each sqaure that is clicked*
+*/
 
+    $(".grid-column").on("click", function() {
+        clickedSquares.push($(this));
+        $(this).hide();
+    });
 
-/**fristLevel function */
-function firstLevel() {
-    $("#level1").removeClass("hide").slideDown();
-    document.getElementById("number").innerHTML = "1";
-    console.log("FIRST LEVEL")
-    level = 1;
-    clickedSquares = [];
-    seconds = 21;
-}
-
-
-/** function to removes each square when clicked**/
-let timerSeconds;
+/*
+*  timer countdowns to 20 seconds and stops at 0*
+*timer starts when clickedSqaures array is empty and timer is at 20 seconds* 
+*/
 
 function timer() {
     if (seconds == 21 && clickedSquares.length == 0) {
@@ -77,7 +66,35 @@ function timer() {
     }
 }
 
-/** playingGame function*/
+/*
+*function for the first level of the game*
+*/
+
+function firstLevel() {
+    $("#level1").removeClass("hide").slideDown();
+    document.getElementById("number").innerHTML = "1";
+    console.log("FIRST LEVEL")
+    level = 1;
+    clickedSquares = [];
+    seconds = 21;
+}
+
+/* 
+*function that enables you to go the next level and change grid size/pattern on each level*
+ */
+function go_to_level(previousLevel, level) {
+    document.getElementById("number").innerHTML = level;
+    document.getElementById("seconds").innerHTML = "20";
+    $("#level" + previousLevel).addClass("hide");
+    $("#level" + level).removeClass("hide").slideDown();
+    console.log("playing Game");
+}
+
+/*
+* playingGame function*
+*all 10 levels of the game and different size grids impemented*
+*calls endGame function, to restart game*
+*/
 function playingGame() {
     squareNumber = squaresPerLevel[level];
     if (seconds == 0 && clickedSquares.length < squareNumber) {
@@ -156,30 +173,28 @@ function playingGame() {
 
     } else if (seconds > 0 && clickedSquares.length == 35 && level == 10) {
         $("#game-win").slideDown();
+        endGame();
         console.log("game-win slides down")
     }
 }
 
-/** function to removes each square when clicked**/
-
-    $(".grid-column").on("click", function() {
-        console.log("clickedSquares from line 186 = " + clickedSquares)
-        clickedSquares.push($(this));
-        $(this).hide();
-    });
 
 
-/** get reset button */
+/*
+*function for reset button *
+*/
 function resetButton() {
     $(".reset-button").slideDown();
 
 }
 
-/**game start again function */
+/*
+*startGame again function*
+*resets every variable*
+ */
 function startGame() {
     go_to_level(level, 1)
     $(".grid-column").css("margin","0")
-    console.log("STARTING GAME AGAIN")
     clickedSquares = [];
     seconds = 21;
     level = 1;
@@ -187,32 +202,36 @@ function startGame() {
 
 
 
-/**resetGame function*/
+/*
+*Reset butto onclick*
+*removes instruction boxes/start button*
+*shows start button*
+*grid-column onclick function to able to click squares*
+*/
 
 $(".reset-button").on("click", function() {
-    console.log("CLICKED RESET BUTTON")
-    console.log("clickedSquares line 214 = " + clickedSquares)
-    console.log("seconds line 215 = " + seconds)
-    console.log("level line 216 = " + level)
     $(this).css("display", "none");
     $("#game-win").addClass("hide");
+    $("#game-over").slideUp();
     $(".start-button").slideDown();
+
     $(".grid-column").on("click", function() {
-        console.log("clickedSquares from line 186 = " + clickedSquares)
         clickedSquares.push($(this));
         $(this).hide();
     });
-    console.log("WHAT HAPPENS TO START BUTTON - line 220")
-    $("#game-over").slideUp();
 });
 
 
-/** gameOver function */
+/*
+* EndGamefunction *
+*calls restbutton and startGame function*
+*shows the grid-column*
+*switchs off grid-column on click function*
+*/
 
 function endGame() {
     startGame();
     $("#game-over").slideDown();
-    console.log("ENDGAME line 229")
     resetButton();
     $(".grid-column").show()
     $(".grid-column").off('click');
