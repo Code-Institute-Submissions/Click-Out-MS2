@@ -1,23 +1,14 @@
-// DOM Variables 
-
 
 //variables 
-let squares;
-let startButton = document.getElementsByClassName("start-button");
 let clickedSquares = [];
-let instructionBox = document.getElementsByClassName("instruction-container");
-const messageBoard = document.getElementsByClassName("message")
 let level = 1;
 let seconds = 21;
-let levels = document.getElementById("number");
 let squaresPerLevel = [0, 9, 12, 16, 15, 20, 21, 25, 30, 28, 35]
 let squareNumber;
-let totalSquares;
 
 
 
-
-//landing page
+/**landing page**/
 
 $(document).ready(function() {
     $("#logo").slideDown(2000);
@@ -27,8 +18,6 @@ $(document).ready(function() {
 });
 
 /* next level function */
-const gridColumn = document.querySelectorAll(".grid-column")
-
 function go_to_level(previousLevel, level) {
     document.getElementById("number").innerHTML = level;
     document.getElementById("seconds").innerHTML = "20";
