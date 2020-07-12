@@ -24,6 +24,13 @@ What requirement i want met as a user:
  
 ## Wireframes
 
+Wireframes were created using balsamiq , had to recreate the wireframes when I changed the game I wanted to create. However most of the design and layout remained the same, as the it was also a grid based game.
+
+
+  [Desktop](https://github.com/Tabita99/Click-Out-MS2/blob/master/Wireframes/Logo%2C%20alert%20and%20instructions%20.png)
+- [Desktop 2](https://github.com/Tabita99/Click-Out-MS2/blob/master/Wireframes/Desktop%20Version.png)
+- [Tablet](https://github.com/Tabita99/Click-Out-MS2/blob/master/Wireframes/tablet%20version.png)
+- [Mobile](https://github.com/Tabita99/Click-Out-MS2/blob/master/Wireframes/mobile%20version.png)
 
 ## Features 
  ### Existing Features
@@ -129,6 +136,8 @@ This was solved by removing the click function that the on click  grid column fu
 
 * When the game restarted, if you failed a level with a bigger grid-columns margins, when the game restarted again the, the margin would not reset
   it would be applied to all the other levels. This was solved by using jquery and restting the margin to 0 in the start game function.
+
+*  When the game ended you were still able to click the square when the game ended. Resolved by disabling the onclick gri-column function, which meant you couldn't click sai grid.
 
 ## Technologies Used
 
