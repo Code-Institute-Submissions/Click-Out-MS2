@@ -162,9 +162,23 @@ To clone this project from GitHub:
 4. Change the current working directory to the location where you want the cloned directory to be made.
 5. Type ```git clone```, and then paste the URL you copied in Step 3.
 ```console
-git clone https://github.com/Tabita99/Au-Naturale.git
+git clone https://tabita99.github.io/Click-Out-MS2/
 ```
 6. Press Enter. Your local clone will be created.
 
 Further reading and troubleshooting on cloning a repository from GitHub [here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository/)
+
+## Credits
+
+### Content
+* Used stackoverflow to get some code inspiration (how to create my countdown timer) solve code issues https://stackoverflow.com/
+* Readme layout code examples taken from:
+Kieran Cunnane https://github.com/Legaeldan/milestone-2
+Mia https://github.com/mkuti/FlagGame 
+
+## Acknowledgements
+I would like to thank :
+
+* The tutors at code institute for their help
+* My mentor Antonio Rodriguez
 
