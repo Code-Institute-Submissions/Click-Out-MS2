@@ -99,6 +99,7 @@ function playingGame() {
     squareNumber = squaresPerLevel[level];
     if (seconds == 0 && clickedSquares.length < squareNumber) {
         endGame();
+        $("#game-over").slideDown();
     } else if (seconds > 0 && clickedSquares.length == 9 && level == 1) {
         go_to_level(1, 2);
         seconds = 21;
@@ -173,7 +174,8 @@ function playingGame() {
 
     } else if (seconds > 0 && clickedSquares.length == 35 && level == 10) {
         $("#game-win").slideDown();
-        endGame();
+        //endGame();
+        gameWin();
         console.log("game-win slides down")
     }
 }
@@ -211,10 +213,9 @@ function startGame() {
 
 $(".reset-button").on("click", function() {
     $(this).css("display", "none");
-    $("#game-win").addClass("hide");
+    $("#game-win").slideUp();;
     $("#game-over").slideUp();
     $(".start-button").slideDown();
-
     $(".grid-column").on("click", function() {
         clickedSquares.push($(this));
         $(this).hide();
@@ -231,9 +232,17 @@ $(".reset-button").on("click", function() {
 
 function endGame() {
     startGame();
-    $("#game-over").slideDown();
     resetButton();
     $(".grid-column").show()
     $(".grid-column").off('click');
 
 }
+
+/**Game wine fuction */
+ function gameWin(){
+    resetButton();
+    endGame();
+    seconds = 0;
+            
+
+ }
