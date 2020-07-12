@@ -213,7 +213,6 @@ $(".reset-button").on("click", function() {
         clickedSquares.push($(this));
         $(this).hide();
     });
-    //canClickSquares();
     console.log("WHAT HAPPENS TO START BUTTON - line 220")
     $("#game-over").slideUp();
 });
@@ -229,16 +228,4 @@ function endGame() {
     $(".grid-column").show()
     $(".grid-column").off('click');
 
-   
 }
-
-/**disable grid -column onclick function */
-
-/*function NoClickingSquare () {
-    $(".grid-column").click(function(){});
-    $(".grid-column").off('click');
-
-}
-
-
-*/
