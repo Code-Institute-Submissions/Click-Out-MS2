@@ -174,8 +174,7 @@ function playingGame() {
 
     } else if (seconds > 0 && clickedSquares.length == 35 && level == 10) {
         $("#game-win").slideDown();
-        //endGame();
-        gameWin();
+        gameWin()
         console.log("game-win slides down")
     }
 }
@@ -238,11 +237,14 @@ function endGame() {
 
 }
 
-/**Game wine fuction */
+/**
+ * GameWin  fuction*
+ * restart game, when entire game is won * 
+  */
  function gameWin(){
     resetButton();
     endGame();
-    seconds = 0;
+    seconds =0;
             
 
  }
