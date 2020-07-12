@@ -3,6 +3,44 @@
 </div>
 <div align="center">
 
+##  Table of Contents
+
+1. [**UX**](#ux)
+    - [**Project Goals**](#project-goals)
+    - [**User Stories**](#user-stories)
+
+2.   [**Wireframes**](#wireframes)
+
+3. [**Features**](#features)
+    - [**Existing Features**](#existing-features)
+    - [**Features Left to Implement**](#features-left-to-implement)
+
+4. [**Design**](#design)
+    - [**Color Scheme**](#colours)
+    - [**Font**](#font)
+    - [**Logo**](#logo)
+    - [**Game Grid**](#game-grid)
+
+ 5. [**Final and Official Testing**](#final-and-official-testing)
+    - [**Known Bugs**](#known-bugs)
+
+6. [**Testing**](#testing)
+    - [**General Testing**](#general-testing)
+    - [**Testing Javascripts**](#testing-javascripts)
+
+7. [**Issues and Resolutions**](#Issues-and-resolutions)    
+   
+8. [**Technologies Used**](#technologies-used)
+
+9. [**Deployment**](#deployment)
+    - [**How to Run This Project Locally**](#how-to-run-this-project-locally)
+
+10. [**Credits**](#credits)
+       - [**Content**](#Content)
+       - [**Testing Javascripts**](#testing-javascripts)
+
+11. [**Acknowledgements**](#acknowledgements)
+
 # Click Out!     
 </div>
 
@@ -24,8 +62,7 @@ What requirement i want met as a user:
  
 ## Wireframes
 
-Wireframes were created using balsamiq , had to recreate the wireframes when I changed the game I wanted to create. However most of the design and layout remained the same, as the it was also a grid based game.
-
+ Wireframes were created using balsamiq , had to recreate the wireframes when I changed the game I wanted to create. However most of the design and layout remained the same, as the it was also a grid based game.
 
   [Desktop](https://github.com/Tabita99/Click-Out-MS2/blob/master/Wireframes/Logo%2C%20alert%20and%20instructions%20.png)
 - [Desktop 2](https://github.com/Tabita99/Click-Out-MS2/blob/master/Wireframes/Desktop%20Version.png)
@@ -33,7 +70,8 @@ Wireframes were created using balsamiq , had to recreate the wireframes when I c
 - [Mobile](https://github.com/Tabita99/Click-Out-MS2/blob/master/Wireframes/mobile%20version.png)
 
 ## Features 
- ### Existing Features
+
+### Existing Features
 
  1. Fade in Starting Page -  The start page begins with the gradual fade in of the game logo. This is followed by the game title, instruction message box stating how the game is played and finally as start button to being the game. 
  This allows the player to be able to take instruction and allow them to click play when they've fully understood the game. 
@@ -60,24 +98,25 @@ Wireframes were created using balsamiq , had to recreate the wireframes when I c
 
 ## Design 
 
-### 1. font 
+###  Font 
 Using google FontAwosome i used the Roboto, just keeping it simple as the gameis not really focused on writing i kept the choice simple. 
  
-### 2. Colours
+###  Colours
    Game colours - As it's a simple game, i chose to keep the colour scheme very simple, by only using 3 colours max. 
    When i was doing some research on the game i wanted to create, i kept seeing a theme of a very dark background, i also read somewhere that it's easier on the eye. 
    So i decided to take that route. I got the idea of a white grid from the game logo which is actually a favicon, i liked how it looked a decided i wanted to match it.
    intially the background was dark purple but i went a bit darker as i went to ont create the game as it was a better fit and the white from the grid popped put more. The colour of the font was black until i changed the background,
    the background colour was the most important to be because it acted as a base for my colour scheme. 
 
-### 3. logo 
+###  Logo 
 The logo is a square grid, matching the sentiments on the game. As it's basically a grid game, i wanted to that to resonate in the logo,
 and keep it simply by making them the same colour, i wanted everything to link together, and makig th whole game cohesive.
 
-### 4 Game grid
+###  Game grid
 Similar to the logo grid, same the colour, just to make the game design come together. Although the grid changes in size as the continue to up a level, the theme remains. 
 
 ## Final and official testing
+
 * [W3C Markup Validation](https://validator.w3.org/)  HTML validation.
 * [W3C CSS validation](https://jigsaw.w3.org/css-validator/) CSS validation.
 
